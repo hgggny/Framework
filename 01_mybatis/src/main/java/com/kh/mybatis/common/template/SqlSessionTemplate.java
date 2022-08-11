@@ -17,6 +17,7 @@ public class SqlSessionTemplate {
 		
 		try {
 			// SqlSession 객체 생성하기
+			
 			// 1. SqlSessionFactoryBuilder 객체 생성
 			builder = new SqlSessionFactoryBuilder();
 			// mybatis에서 자원을 좀 더 쉽게 로드할 수 있는 Resources 클래스를 제공한다.

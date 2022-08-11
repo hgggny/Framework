@@ -7,6 +7,15 @@
 	<!-- DB 연결 정보를 외부 properties 파일에서 불러오기 위한 요소 -->
 	<properties resource="driver.properties"/>
 	
+	<settings>
+		<!-- 파라미터의 null 값에 대한 JDBC 타입을 지정한다. -->
+		<setting name="jdbcTypeForNull" value="NULL"/>
+	</settings>
+	
+	<typeAliases>
+		<typeAlias type="com.kh.mybatis.member.model.vo.Member" alias="Member"/>
+	</typeAliases>
+	
 	<!-- 
 		DB에 연결할 설정 정보들을 선언하는 요소(태그) 
 			default 속성
@@ -37,7 +46,7 @@
 	
 	<!-- 연결된 DB에서 사용하는 쿼리문을 담는 Mapper 파일을 등록하는 요소 -->
 	<mappers>
-		<!-- classPath 기준으로 작업한다 -->
+		<!-- target - classes path를 기준으로 작업한다 -->
 		<mapper resource="mappers/member/member-mapper.xml"/>
 	</mappers>
 </configuration>
