@@ -51,8 +51,6 @@
 		<result property="modifyDate" column="MODIFY_DATE"/>
 	</resultMap>
 
-
-
 	<select id="selectCount" resultType="_int"> 
 		SELECT COUNT(*) FROM MEMBER
 	</select>
@@ -142,7 +140,22 @@
 			)
 	</insert>
 	
+	<update id="updateMember" parameterType="Member">
+		UPDATE MEMBER 
+		SET 
+			NAME = #{name},
+			PASSWORD = #{password},
+			PHONE = #{phone},
+			EMAIL = #{email},
+			ADDRESS = #{address},
+			HOBBY = #{hobby},
+			MODIFY_DATE = SYSDATE 
+		WHERE NO = #{no}
+	</update>
 	
+	<delete id="deleteMember" parameterType="_int">
+		DELETE FROM MEMBER WHERE NO = #{no}
+	</delete>
 	
 	
 	

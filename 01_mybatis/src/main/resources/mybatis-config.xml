@@ -14,7 +14,9 @@
 	
 	<typeAliases>
 		<typeAlias type="com.kh.mybatis.member.model.vo.Member" alias="Member"/>
+		<typeAlias type="com.kh.mybatis.board.model.vo.Board" alias="Board"/>
 	</typeAliases>
+	
 	
 	<!-- 
 		DB에 연결할 설정 정보들을 선언하는 요소(태그) 
@@ -48,5 +50,6 @@
 	<mappers>
 		<!-- target - classes path를 기준으로 작업한다 -->
 		<mapper resource="mappers/member/member-mapper.xml"/>
+		<mapper resource="mappers/board/board-mapper.xml"/>
 	</mappers>
 </configuration>

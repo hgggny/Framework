@@ -57,6 +57,7 @@ public class MemberServiceImpl implements MemberService {
 
 		if(member.getNo() != 0) {
 			// update
+			result = dao.updateMember(session, member);
 		} else {
 			// insert
 			result = dao.insertMember(session, member);
@@ -68,6 +69,24 @@ public class MemberServiceImpl implements MemberService {
 			
 		} else {
 			// rollback
+			session.rollback();
+		}
+		
+		session.close();
+		
+		return result;
+	}
+
+	@Override
+	public int delete(int no) {
+		int result = 0;
+		SqlSession session = getSession();
+		
+		result = dao.delete(session, no);
+		
+		if(result > 0) {
+			session.commit();
+		} else {
 			session.rollback();
 		}
 		

@@ -80,8 +80,6 @@ class MemberServiceTest {
 		
 		member = service.findMemberById(id);
 		
-		System.out.println(member);
-
 		assertThat(member).isNotNull()
 						  .extracting("id")
 						  .isEqualTo(id);
@@ -106,6 +104,47 @@ class MemberServiceTest {
 		assertThat(service.findMemberById(id)).isNotNull();
 	}
 	
+	@ParameterizedTest
+	@CsvSource({
+		"test1, 0000, 이몽룡",
+		"test2, 9999, 성춘향"
+	})
+	@DisplayName("회원 정보 수정 테스트")
+	@Order(5)
+	void updateMemberTest(String id, String password, String name) {
+		int result = 0;
+		Member member = null;
+		
+		member = service.findMemberById(id);
+		
+		member.setPassword(password);
+		member.setName(name);
+		
+		result = service.save(member);
+		
+		// 실제로 DB에 Member가 수정되었는지 확인하기 위해서 다시 Member를 조회
+		member = service.findMemberById(id);
+		
+		assertThat(result).isPositive().isGreaterThan(0);
+		// 바뀐 이름이 name 과 같은지 테스트
+		assertThat(member.getName()).isNotNull().isEqualTo(name);
+	}
+	
+	@ParameterizedTest
+	@ValueSource(strings = {"test1", "test2"})
+	@DisplayName("회원 삭제 테스트")
+	@Order(6)
+	void deleteTest(String id) {
+		int result = 0;
+		Member member = null;
+		
+		member = service.findMemberById(id);
+		result = service.delete(member.getNo());
+		
+		assertThat(result).isGreaterThan(0);
+		assertThat(service.findMemberById(id)).isNull();
+
+	}
 	
 	
 	

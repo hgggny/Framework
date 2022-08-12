@@ -12,4 +12,6 @@ public interface MemberService {
 	Member findMemberById(String id);
 
 	int save(Member member);
+
+	int delete(int no);
 }

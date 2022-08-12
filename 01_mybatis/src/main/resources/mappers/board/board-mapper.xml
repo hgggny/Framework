@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- mybatis mapper 설정 파일임을 선언한다. -->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="boardMapper">
+	<resultMap type="Board" id="boardListResultMap">
+		<id property="no" column="NO"/>
+		<result property="title" column="TITLE"/>
+		<result property="writerId" column="ID"/>
+		<result property="readCount" column="READCOUNT"/>
+		<result property="originalFileName" column="ORIGINAL_FILENAME"/>
+		<result property="renamedFileName" column="RENAMED_FILENAME"/>
+		<result property="createDate" column="CREATE_DATE"/>
+	</resultMap>
+	
+	<select id="selectAll" resultMap="boardListResultMap">
+		SELECT  B.NO,
+				B.TITLE,
+				M.ID,
+				B.READCOUNT,
+				B.ORIGINAL_FILENAME,
+				B.RENAMED_FILENAME,
+				B.CREATE_DATE
+		FROM BOARD B
+		JOIN MEMBER M ON(B.WRITER_NO = M.NO)
+		WHERE B.STATUS = 'Y'
+		ORDER BY B.NO DESC
+	</select>
+
+
+
+</mapper>

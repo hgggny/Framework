@@ -7,11 +7,16 @@ import org.apache.ibatis.session.SqlSession;
 import com.kh.mybatis.member.model.vo.Member;
 
 public interface MemberDao {
-	public int getMemberCount(SqlSession session);
+	int getMemberCount(SqlSession session);
 
-	public List<Member> findAll(SqlSession session);
+	List<Member> findAll(SqlSession session);
 
-	public Member findMemberById(SqlSession session, String id);
+	Member findMemberById(SqlSession session, String id);
 
-	public int insertMember(SqlSession session, Member member);
+	int insertMember(SqlSession session, Member member);
+
+	int updateMember(SqlSession session, Member member);
+	
+	int delete(SqlSession session, int no);
+
 }
