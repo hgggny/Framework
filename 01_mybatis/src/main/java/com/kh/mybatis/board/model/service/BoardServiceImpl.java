@@ -27,6 +27,30 @@ public class BoardServiceImpl implements BoardService {
 	}
 	
 	@Override
+	public int getBoardCount(String writer, String title, String content) {
+		int count = 0;
+		SqlSession session = getSession(); 
+
+		count = dao.getBoardCount(session, writer, title, content);
+		
+		session.close();
+		
+		return count;
+	}
+	
+	@Override
+	public int getBoardCount(String[] filters) {
+		int count = 0;
+		SqlSession session = getSession(); 
+		
+		count = dao.getBoardCount(session, filters);
+		
+		session.close();
+
+		return count;
+	}
+	
+	@Override
 	public List<Board> findAll(PageInfo pageInfo) {
 		List<Board> list = null;
 		SqlSession session = getSession(); 
@@ -39,14 +63,40 @@ public class BoardServiceImpl implements BoardService {
 	}
 
 	@Override
-	public List<Board> findAll(String writer, String title, String content) {
+	public List<Board> findAll(PageInfo pageInfo, String writer, String title, String content) {
 		List<Board> list = null;
 		SqlSession session = getSession(); 
 		
-		list = dao.findAll(session, writer, title, content);
+		list = dao.findAll(session, pageInfo, writer, title, content);
 		
 		session.close();
 
 		return list;
 	}
+
+	@Override
+	public List<Board> findAll(PageInfo pageInfo, String[] filters) {
+		List<Board> list = null;
+		SqlSession session = getSession(); 
+		
+		list = dao.findAll(session, pageInfo, filters);
+				
+		session.close();
+
+		return list;
+	}
+
+	@Override
+	public Board findBoardByNo(int no) {
+		Board board = null;
+		SqlSession session = getSession(); 
+		
+		board = dao.findBoardByNo(session, no);
+
+		session.close();
+
+		return board;
+	}
+
+
 }

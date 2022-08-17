@@ -15,8 +15,9 @@
 	<typeAliases>
 		<typeAlias type="com.kh.mybatis.member.model.vo.Member" alias="Member"/>
 		<typeAlias type="com.kh.mybatis.board.model.vo.Board" alias="Board"/>
+		<typeAlias type="com.kh.mybatis.board.model.vo.Reply" alias="Reply"/>
 	</typeAliases>
-	
+
 	
 	<!-- 
 		DB에 연결할 설정 정보들을 선언하는 요소(태그) 

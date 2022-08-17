@@ -11,8 +11,18 @@ public interface BoardDao {
 
 	int getBoardCount(SqlSession session);
 
+	int getBoardCount(SqlSession session, String writer, String title, String content);
+	
+	int getBoardCount(SqlSession session, String[] filters);
+	
 	List<Board> findAll(SqlSession session, PageInfo pageInfo);
 
-	List<Board> findAll(SqlSession session, String writer, String title, String content);
+	List<Board> findAll(SqlSession session, PageInfo pageInfo, String writer, String title, String content);
+
+	List<Board> findAll(SqlSession session, PageInfo pageInfo, String[] filters);
+
+	Board findBoardByNo(SqlSession session, int no);
+
+
 
 }

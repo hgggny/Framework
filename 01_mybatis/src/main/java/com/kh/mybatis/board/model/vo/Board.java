@@ -31,6 +31,8 @@ public class Board {
 	
 	private String status;
 	
+	private String type;
+	
 	private List<Reply> replies;
 	
 	private Date createDate;
