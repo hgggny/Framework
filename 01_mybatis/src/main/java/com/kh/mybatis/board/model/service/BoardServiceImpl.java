@@ -98,5 +98,49 @@ public class BoardServiceImpl implements BoardService {
 		return board;
 	}
 
+	@Override
+	public int save(Board board) {
+		int result = 0;
+		SqlSession session = getSession(); 
+		
+		if(board.getNo() != 0) {
+			// update
+			result = dao.updateBoard(session, board);
+		} else {
+			// insert
+			result = dao.insertBoard(session, board);
+		}
+		
+		if(result > 0) {
+			// commit
+			session.commit();
+		} else {
+			// rollback
+			session.rollback();
+		}
+		
+		session.close();
+		
+		return result;
+	}
+
+	@Override
+	public int delete(int no) {
+		int result = 0;
+		SqlSession session = getSession(); 
+		
+		result = dao.updateStatus(session, no, BoardDao.STATUS_DISABLE);
+		
+		if(result > 0) {
+			session.commit();
+		} else {
+			session.rollback();
+		}
+		
+		session.close();
+		
+		return result;
+	}
+
 
 }

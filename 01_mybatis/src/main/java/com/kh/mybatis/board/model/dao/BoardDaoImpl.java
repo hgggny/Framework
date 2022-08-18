@@ -105,6 +105,31 @@ public class BoardDaoImpl implements BoardDao {
 		return session.selectOne("boardMapper.selectBoardByNo", no);
 	}
 
+	@Override
+	public int insertBoard(SqlSession session, Board board) {
+
+		return session.insert("boardMapper.insertBoard", board);
+	}
+
+	@Override
+	public int updateBoard(SqlSession session, Board board) {
+
+		return session.update("boardMapper.updateBoard", board);
+	}
+	
+	@Override
+	public int updateStatus(SqlSession session, int no, String status) {
+		// Object - String이랑 int를 둘다 받아야 하므로 상위 객체로 받는다
+		Map<String, Object> map = new HashMap<>();
+		
+		map.put("no", no);
+		map.put("status", status);
+		
+		return session.update("boardMapper.updateStatus", map);
+	}
+
+
+
 
 
 

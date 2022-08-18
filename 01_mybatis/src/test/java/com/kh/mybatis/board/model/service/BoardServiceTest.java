@@ -51,9 +51,7 @@ class BoardServiceTest {
 		int count = 0;
 		
 		count = service.getBoardCount();
-		
-//		System.out.println(count);
-		
+				
 		assertThat(count).isGreaterThan(0);
 	}
 	
@@ -69,17 +67,10 @@ class BoardServiceTest {
 		PageInfo pageInfo = null;
 		int listCount = 0;
 		
-//		pageInfo = new PageInfo(1, 10, 158, 10);
-//		pageInfo = new PageInfo(16, 10, 158, 10);
-//		pageInfo = new PageInfo(currentPage, 10, 158, 10);
-		
 		listCount = service.getBoardCount();
 		pageInfo = new PageInfo(currentPage, 10, listCount, 10);
 				
 		list = service.findAll(pageInfo);
-		
-//		System.out.println(list);
-//		System.out.println(list.size());
 		
 		// isNotNull - NULL 인지 아닌지
 		// isNotEmpty - list 객체의 요소가 비어있는가
@@ -129,9 +120,6 @@ class BoardServiceTest {
 		pageInfo = new PageInfo(1, 10, expected, 10);
 		list = service.findAll(pageInfo, writer, title, content);
 		
-//		System.out.println(list);
-//		System.out.println(list.size());
-		
 		assertThat(list).isNotNull().isNotEmpty();
 		assertThat(list.size()).isEqualTo(expected);
 	}
@@ -164,35 +152,79 @@ class BoardServiceTest {
 		pageInfo = new PageInfo(1, 10, listCount, 10);
 		list = service.findAll(pageInfo, filters);
 		
-//		System.out.println(list);
-//		System.out.println(list.size());
-		
 		// 조회되는게 없어도 null은 아니고 빈 배열이 나온다. 
 		assertThat(list).isNotNull().isNotEmpty();
 	}
+
 	
-	@Test
+	@ParameterizedTest
+	@ValueSource(ints = {122})
 	@Order(7)
 	@DisplayName("게시글 상세 조회(댓글 포함) 테스트")
-	void findBoardByNoTest() {
+	void findBoardByNoTest(int no) {
 		Board board = null;
 		
-		board = service.findBoardByNo(122);
+		board = service.findBoardByNo(no);
 		
-		System.out.println(board);
-		System.out.println(board.getReplies());
-		System.out.println(board.getReplies().size());
-		
-		assertThat(board).isNotNull();
+		assertThat(board).isNotNull().extracting("no").isEqualTo(no);
+		assertThat(board.getReplies()).isNotNull();
 	}
 	
+	@Test
+	@Order(8)
+	@DisplayName("게시물 등록 테스트")
+	void insertBoardTest() {
+		int result = 0;
+		Board board = new Board();
+		
+		board.setWriterNo(2);
+		board.setTitle("mybatis 게시글");
+		board.setContent("mybatis로 게시글을 작성하였습니다.");
+		board.setOriginalFileName("test.txt");
+		board.setRenamedFileName("test.txt");
+		
+		result = service.save(board);
+		
+		assertThat(result).isGreaterThan(0);
+		assertThat(board.getNo()).isGreaterThan(0);
+		assertThat(service.findBoardByNo(board.getNo())).isNotNull();
+	}
 	
+	@ParameterizedTest
+	@MethodSource("boardProvider")
+	@Order(9)
+	@DisplayName("게시글 수정 테스트")
+	void updateBoardTest(Board board) {
+		int result = 0;
+		
+		board.setTitle("mybatis 게시글 - 수정");
+		board.setContent("mybatis로 게시글을 작성하였습니다. - 수정");
+		board.setOriginalFileName("sample.txt");
+		board.setRenamedFileName("sample.txt");
+//		board.setOriginalFileName(null);
+//		board.setRenamedFileName(null);
+		
+		result = service.save(board);
+		
+		assertThat(result).isGreaterThan(0);
+		assertThat(service.findBoardByNo(board.getNo())).extracting("title").isEqualTo("mybatis 게시글 - 수정");
+	}
 	
-	
-	
-	
-	
-	
+	@ParameterizedTest
+	@MethodSource("boardProvider")
+	@Order(10)
+	@DisplayName("게시글 삭제 테스트")
+	void deleteBoardTest(Board board) {
+		int result = 0;
+		
+//		System.out.println(board);
+//		System.out.println(board.getNo());
+		
+		result = service.delete(board.getNo());
+		
+		assertThat(result).isEqualTo(1);
+		assertThat(service.findBoardByNo(board.getNo())).isNull();
+	}
 	
 	public static Stream<Arguments> filterProvider() {
 		return Stream.of(
@@ -201,5 +233,13 @@ class BoardServiceTest {
 		);
 	}
 	
-	
+	public static Stream<Arguments> boardProvider() {
+		BoardServiceImpl service = new BoardServiceImpl();
+		List<Board> list = service.findAll(new PageInfo(1, 10, service.getBoardCount(), 10));
+
+		// 가장 최신에 작성된 게시글 1개 리턴
+		return Stream.of(
+			Arguments.arguments(list.get(0))
+		);
+	}
 }
