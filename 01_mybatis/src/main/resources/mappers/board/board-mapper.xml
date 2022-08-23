@@ -300,7 +300,7 @@
 			DEFAULT,
 			DEFAULT
 		)
-	</insert>
+	</insert>	
 	
 	<!-- 게시글 수정 테스트 -->
 	<update id="updateBoard" parameterType="Board">

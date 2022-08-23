@@ -5,13 +5,20 @@ import static com.kh.mybatis.common.template.SqlSessionTemplate.getSession;
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.kh.mybatis.board.model.dao.BoardDao;
 import com.kh.mybatis.board.model.dao.BoardDaoImpl;
 import com.kh.mybatis.board.model.vo.Board;
 import com.kh.mybatis.common.util.PageInfo;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class BoardServiceImpl implements BoardService {
+	// 현재 클래스 정보를 넘겨준다. 
+//	private static Logger log = LoggerFactory.getLogger(BoardServiceImpl.class); // 주석 처리하고 lombok으로 처리하기
 	private BoardDao dao = new BoardDaoImpl();
 	
 	@Override
@@ -20,6 +27,8 @@ public class BoardServiceImpl implements BoardService {
 		SqlSession session = getSession(); 
 		
 		count = dao.getBoardCount(session);
+		log.info("BoardCount : " + count);
+		log.debug("BoardCount : " + count);
 		
 		session.close();
 		
@@ -52,6 +61,7 @@ public class BoardServiceImpl implements BoardService {
 	
 	@Override
 	public List<Board> findAll(PageInfo pageInfo) {
+		log.debug("findAll(PageInfo pageInfo) - 호출");
 		List<Board> list = null;
 		SqlSession session = getSession(); 
 		

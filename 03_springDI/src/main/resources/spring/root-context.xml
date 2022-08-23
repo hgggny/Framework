@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- 
+		Owner owner = new Owner();
+		→ 기본 생성자로 만들어 주는 과정 !
+		
+		Owner owner = new Owner("바켠진", 29, new Dog("나비"));
+	-->
+	<bean id="owner" class="com.kh.di.owner.Owner">
+		<constructor-arg name="name" value="바켠진" />
+		<constructor-arg name="age" value="29" />
+		<constructor-arg name="pet" ref="dog"/>
+	</bean>
+	
+	<!-- 
+		Dog dog = new Dog("배추");
+	 -->
+	<bean id="dog" class="com.kh.di.pet.Dog">
+		<constructor-arg name="name" value="배추"/>
+	</bean>
+</beans>

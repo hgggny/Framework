@@ -1,0 +1,948 @@
+[DEBUG] 2022-08-19 11:06:03.353 [main] org.apache.ibatis.logging.LogFactory setImplementation - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter. - 
+[DEBUG] 2022-08-19 11:06:03.361 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:03.361 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:03.361 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:03.361 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:03.456 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:03.739 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1959758632. - 
+[DEBUG] 2022-08-19 11:06:03.739 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@74cf8b28] - 
+[DEBUG] 2022-08-19 11:06:03.741 [main] boardMapper.selectBoardCount debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD WHERE STATUS='Y' - 
+[DEBUG] 2022-08-19 11:06:03.817 [main] boardMapper.selectBoardCount debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:06:03.841 [main] boardMapper.selectBoardCount debug - <==      Total: 1 - 
+[INFO ] 2022-08-19 11:06:03.842 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 155 - 
+[DEBUG] 2022-08-19 11:06:03.843 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 155 - 
+[DEBUG] 2022-08-19 11:06:03.843 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@74cf8b28] - 
+[DEBUG] 2022-08-19 11:06:03.843 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@74cf8b28] - 
+[DEBUG] 2022-08-19 11:06:03.843 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1959758632 to pool. - 
+[DEBUG] 2022-08-19 11:06:03.953 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:03.953 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:03.953 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:03.953 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:03.983 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:04.005 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 148353618. - 
+[DEBUG] 2022-08-19 11:06:04.006 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@8d7b252] - 
+[DEBUG] 2022-08-19 11:06:04.006 [main] boardMapper.selectBoardCount debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD WHERE STATUS='Y' - 
+[DEBUG] 2022-08-19 11:06:04.006 [main] boardMapper.selectBoardCount debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:06:04.008 [main] boardMapper.selectBoardCount debug - <==      Total: 1 - 
+[INFO ] 2022-08-19 11:06:04.008 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 155 - 
+[DEBUG] 2022-08-19 11:06:04.008 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 155 - 
+[DEBUG] 2022-08-19 11:06:04.008 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@8d7b252] - 
+[DEBUG] 2022-08-19 11:06:04.009 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@8d7b252] - 
+[DEBUG] 2022-08-19 11:06:04.009 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 148353618 to pool. - 
+[DEBUG] 2022-08-19 11:06:04.019 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.019 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.019 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.019 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.052 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:04.075 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 595663369. - 
+[DEBUG] 2022-08-19 11:06:04.075 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@23811a09] - 
+[DEBUG] 2022-08-19 11:06:04.075 [main] boardMapper.selectAll debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS = 'Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:06:04.075 [main] boardMapper.selectAll debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:06:04.083 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@23811a09] - 
+[DEBUG] 2022-08-19 11:06:04.083 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@23811a09] - 
+[DEBUG] 2022-08-19 11:06:04.083 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 595663369 to pool. - 
+[DEBUG] 2022-08-19 11:06:04.105 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.105 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.105 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.105 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.117 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.119 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.121 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.130 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:04.152 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1940749968. - 
+[DEBUG] 2022-08-19 11:06:04.152 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@73ad7e90] - 
+[DEBUG] 2022-08-19 11:06:04.152 [main] boardMapper.selectBoardCount debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD WHERE STATUS='Y' - 
+[DEBUG] 2022-08-19 11:06:04.152 [main] boardMapper.selectBoardCount debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:06:04.154 [main] boardMapper.selectBoardCount debug - <==      Total: 1 - 
+[INFO ] 2022-08-19 11:06:04.154 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 155 - 
+[DEBUG] 2022-08-19 11:06:04.154 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 155 - 
+[DEBUG] 2022-08-19 11:06:04.154 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@73ad7e90] - 
+[DEBUG] 2022-08-19 11:06:04.154 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@73ad7e90] - 
+[DEBUG] 2022-08-19 11:06:04.155 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1940749968 to pool. - 
+[DEBUG] 2022-08-19 11:06:04.161 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.161 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.161 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.161 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.178 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:04.196 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 300104620. - 
+[DEBUG] 2022-08-19 11:06:04.196 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@11e33bac] - 
+[DEBUG] 2022-08-19 11:06:04.197 [main] boardMapper.selectAll debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS = 'Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:06:04.197 [main] boardMapper.selectAll debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:06:04.204 [main] boardMapper.selectAll debug - <==      Total: 155 - 
+[DEBUG] 2022-08-19 11:06:04.205 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@11e33bac] - 
+[DEBUG] 2022-08-19 11:06:04.205 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@11e33bac] - 
+[DEBUG] 2022-08-19 11:06:04.205 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 300104620 to pool. - 
+[DEBUG] 2022-08-19 11:06:04.219 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.219 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.219 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.219 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.263 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:04.282 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 986238875. - 
+[DEBUG] 2022-08-19 11:06:04.282 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ac8cf9b] - 
+[DEBUG] 2022-08-19 11:06:04.282 [main] boardMapper.selectBoardCountByKeyWord debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS='Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:06:04.282 [main] boardMapper.selectBoardCountByKeyWord debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:06:04.283 [main] boardMapper.selectBoardCountByKeyWord debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:06:04.283 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ac8cf9b] - 
+[DEBUG] 2022-08-19 11:06:04.283 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ac8cf9b] - 
+[DEBUG] 2022-08-19 11:06:04.284 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 986238875 to pool. - 
+[DEBUG] 2022-08-19 11:06:04.293 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.293 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.293 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.293 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.310 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:04.326 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 346847161. - 
+[DEBUG] 2022-08-19 11:06:04.326 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@14ac77b9] - 
+[DEBUG] 2022-08-19 11:06:04.326 [main] boardMapper.selectBoardCountByKeyWord debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS='Y' AND M.ID LIKE '%' || ? || '%' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:06:04.327 [main] boardMapper.selectBoardCountByKeyWord debug - ==> Parameters: ad(String) - 
+[DEBUG] 2022-08-19 11:06:04.328 [main] boardMapper.selectBoardCountByKeyWord debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:06:04.328 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@14ac77b9] - 
+[DEBUG] 2022-08-19 11:06:04.328 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@14ac77b9] - 
+[DEBUG] 2022-08-19 11:06:04.328 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 346847161 to pool. - 
+[DEBUG] 2022-08-19 11:06:04.337 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.337 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.337 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.337 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.358 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:04.384 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1112073835. - 
+[DEBUG] 2022-08-19 11:06:04.385 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@4248e66b] - 
+[DEBUG] 2022-08-19 11:06:04.385 [main] boardMapper.selectBoardCountByKeyWord debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS='Y' AND B.TITLE LIKE '%' || ? || '%' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:06:04.386 [main] boardMapper.selectBoardCountByKeyWord debug - ==> Parameters: 50(String) - 
+[DEBUG] 2022-08-19 11:06:04.387 [main] boardMapper.selectBoardCountByKeyWord debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:06:04.387 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@4248e66b] - 
+[DEBUG] 2022-08-19 11:06:04.387 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4248e66b] - 
+[DEBUG] 2022-08-19 11:06:04.388 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1112073835 to pool. - 
+[DEBUG] 2022-08-19 11:06:04.400 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.400 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.400 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.401 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.423 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:04.445 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1681993012. - 
+[DEBUG] 2022-08-19 11:06:04.445 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@64412d34] - 
+[DEBUG] 2022-08-19 11:06:04.445 [main] boardMapper.selectBoardCountByKeyWord debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS='Y' AND B.CONTENT LIKE '%' || ? || '%' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:06:04.445 [main] boardMapper.selectBoardCountByKeyWord debug - ==> Parameters: 13(String) - 
+[DEBUG] 2022-08-19 11:06:04.446 [main] boardMapper.selectBoardCountByKeyWord debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:06:04.446 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@64412d34] - 
+[DEBUG] 2022-08-19 11:06:04.446 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@64412d34] - 
+[DEBUG] 2022-08-19 11:06:04.446 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1681993012 to pool. - 
+[DEBUG] 2022-08-19 11:06:04.459 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.459 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.460 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.460 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.482 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.484 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.487 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.489 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.492 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.493 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.496 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:04.516 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1928224132. - 
+[DEBUG] 2022-08-19 11:06:04.516 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@72ee5d84] - 
+[DEBUG] 2022-08-19 11:06:04.517 [main] boardMapper.selectBoardCountByKeyWord debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS='Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:06:04.517 [main] boardMapper.selectBoardCountByKeyWord debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:06:04.518 [main] boardMapper.selectBoardCountByKeyWord debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:06:04.518 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@72ee5d84] - 
+[DEBUG] 2022-08-19 11:06:04.518 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@72ee5d84] - 
+[DEBUG] 2022-08-19 11:06:04.518 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1928224132 to pool. - 
+[DEBUG] 2022-08-19 11:06:04.523 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.523 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.523 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.524 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.540 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:04.559 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1813525162. - 
+[DEBUG] 2022-08-19 11:06:04.559 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@6c1832aa] - 
+[DEBUG] 2022-08-19 11:06:04.559 [main] boardMapper.selectBoardListByKeyWord debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS = 'Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:06:04.559 [main] boardMapper.selectBoardListByKeyWord debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:06:04.565 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@6c1832aa] - 
+[DEBUG] 2022-08-19 11:06:04.565 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@6c1832aa] - 
+[DEBUG] 2022-08-19 11:06:04.565 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1813525162 to pool. - 
+[DEBUG] 2022-08-19 11:06:04.574 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.574 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.574 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.574 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.592 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:04.613 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1931008760. - 
+[DEBUG] 2022-08-19 11:06:04.614 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@7318daf8] - 
+[DEBUG] 2022-08-19 11:06:04.614 [main] boardMapper.selectBoardCountByKeyWord debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS='Y' AND M.ID LIKE '%' || ? || '%' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:06:04.614 [main] boardMapper.selectBoardCountByKeyWord debug - ==> Parameters: ad(String) - 
+[DEBUG] 2022-08-19 11:06:04.616 [main] boardMapper.selectBoardCountByKeyWord debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:06:04.616 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@7318daf8] - 
+[DEBUG] 2022-08-19 11:06:04.616 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7318daf8] - 
+[DEBUG] 2022-08-19 11:06:04.616 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1931008760 to pool. - 
+[DEBUG] 2022-08-19 11:06:04.622 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.622 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.622 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.623 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.639 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:04.660 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 731427771. - 
+[DEBUG] 2022-08-19 11:06:04.660 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@2b98b3bb] - 
+[DEBUG] 2022-08-19 11:06:04.660 [main] boardMapper.selectBoardListByKeyWord debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE M.ID LIKE '%' || ? || '%' AND B.STATUS = 'Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:06:04.660 [main] boardMapper.selectBoardListByKeyWord debug - ==> Parameters: ad(String) - 
+[DEBUG] 2022-08-19 11:06:04.662 [main] boardMapper.selectBoardListByKeyWord debug - <==      Total: 3 - 
+[DEBUG] 2022-08-19 11:06:04.663 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@2b98b3bb] - 
+[DEBUG] 2022-08-19 11:06:04.663 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2b98b3bb] - 
+[DEBUG] 2022-08-19 11:06:04.663 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 731427771 to pool. - 
+[DEBUG] 2022-08-19 11:06:04.671 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.671 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.671 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.671 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.688 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:04.709 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1462928549. - 
+[DEBUG] 2022-08-19 11:06:04.709 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@573284a5] - 
+[DEBUG] 2022-08-19 11:06:04.709 [main] boardMapper.selectBoardCountByKeyWord debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS='Y' AND B.TITLE LIKE '%' || ? || '%' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:06:04.710 [main] boardMapper.selectBoardCountByKeyWord debug - ==> Parameters: 50(String) - 
+[DEBUG] 2022-08-19 11:06:04.710 [main] boardMapper.selectBoardCountByKeyWord debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:06:04.711 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@573284a5] - 
+[DEBUG] 2022-08-19 11:06:04.711 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@573284a5] - 
+[DEBUG] 2022-08-19 11:06:04.711 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1462928549 to pool. - 
+[DEBUG] 2022-08-19 11:06:04.720 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.720 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.720 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.720 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.738 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:04.757 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1688851596. - 
+[DEBUG] 2022-08-19 11:06:04.757 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@64a9d48c] - 
+[DEBUG] 2022-08-19 11:06:04.757 [main] boardMapper.selectBoardListByKeyWord debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.TITLE LIKE '%' || ? || '%' AND B.STATUS = 'Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:06:04.757 [main] boardMapper.selectBoardListByKeyWord debug - ==> Parameters: 50(String) - 
+[DEBUG] 2022-08-19 11:06:04.758 [main] boardMapper.selectBoardListByKeyWord debug - <==      Total: 2 - 
+[DEBUG] 2022-08-19 11:06:04.758 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@64a9d48c] - 
+[DEBUG] 2022-08-19 11:06:04.759 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@64a9d48c] - 
+[DEBUG] 2022-08-19 11:06:04.759 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1688851596 to pool. - 
+[DEBUG] 2022-08-19 11:06:04.768 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.769 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.769 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.770 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.788 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:04.807 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 812031404. - 
+[DEBUG] 2022-08-19 11:06:04.807 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@30669dac] - 
+[DEBUG] 2022-08-19 11:06:04.808 [main] boardMapper.selectBoardCountByKeyWord debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS='Y' AND B.CONTENT LIKE '%' || ? || '%' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:06:04.808 [main] boardMapper.selectBoardCountByKeyWord debug - ==> Parameters: 13(String) - 
+[DEBUG] 2022-08-19 11:06:04.810 [main] boardMapper.selectBoardCountByKeyWord debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:06:04.811 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@30669dac] - 
+[DEBUG] 2022-08-19 11:06:04.812 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@30669dac] - 
+[DEBUG] 2022-08-19 11:06:04.812 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 812031404 to pool. - 
+[DEBUG] 2022-08-19 11:06:04.818 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.818 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.818 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.818 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.837 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:04.856 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1901700557. - 
+[DEBUG] 2022-08-19 11:06:04.856 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@7159a5cd] - 
+[DEBUG] 2022-08-19 11:06:04.856 [main] boardMapper.selectBoardListByKeyWord debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.CONTENT LIKE '%' || ? || '%' AND B.STATUS = 'Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:06:04.856 [main] boardMapper.selectBoardListByKeyWord debug - ==> Parameters: 13(String) - 
+[DEBUG] 2022-08-19 11:06:04.859 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@7159a5cd] - 
+[DEBUG] 2022-08-19 11:06:04.859 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7159a5cd] - 
+[DEBUG] 2022-08-19 11:06:04.860 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1901700557 to pool. - 
+[DEBUG] 2022-08-19 11:06:04.870 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.871 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.871 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.871 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.896 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:04.920 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1147943200. - 
+[DEBUG] 2022-08-19 11:06:04.920 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@446c3920] - 
+[DEBUG] 2022-08-19 11:06:04.920 [main] boardMapper.selectBoardCountByFilters debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD WHERE STATUS='Y' AND TYPE IN ( ? , ? ) - 
+[DEBUG] 2022-08-19 11:06:04.920 [main] boardMapper.selectBoardCountByFilters debug - ==> Parameters: B2(String), B3(String) - 
+[DEBUG] 2022-08-19 11:06:04.921 [main] boardMapper.selectBoardCountByFilters debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:06:04.921 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@446c3920] - 
+[DEBUG] 2022-08-19 11:06:04.921 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@446c3920] - 
+[DEBUG] 2022-08-19 11:06:04.921 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1147943200 to pool. - 
+[DEBUG] 2022-08-19 11:06:04.929 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.929 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.929 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.929 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.950 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.952 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.953 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.955 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.957 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.958 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.960 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.961 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:04.961 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.963 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.984 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1332208607. - 
+[DEBUG] 2022-08-19 11:06:04.984 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@4f67e3df] - 
+[DEBUG] 2022-08-19 11:06:04.984 [main] boardMapper.selectBoardCountByFilters debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD WHERE STATUS='Y' AND TYPE IN ( ? , ? ) - 
+[DEBUG] 2022-08-19 11:06:04.985 [main] boardMapper.selectBoardCountByFilters debug - ==> Parameters: B2(String), B3(String) - 
+[DEBUG] 2022-08-19 11:06:04.986 [main] boardMapper.selectBoardCountByFilters debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:06:04.986 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@4f67e3df] - 
+[DEBUG] 2022-08-19 11:06:04.986 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4f67e3df] - 
+[DEBUG] 2022-08-19 11:06:04.986 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1332208607 to pool. - 
+[DEBUG] 2022-08-19 11:06:04.993 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.993 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.994 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:04.994 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.007 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:05.032 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1171672359. - 
+[DEBUG] 2022-08-19 11:06:05.032 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@45d64d27] - 
+[DEBUG] 2022-08-19 11:06:05.032 [main] boardMapper.selectBoardCountByFilters debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD WHERE STATUS='Y' AND TYPE IN ( ? , ? ) - 
+[DEBUG] 2022-08-19 11:06:05.033 [main] boardMapper.selectBoardCountByFilters debug - ==> Parameters: B2(String), B3(String) - 
+[DEBUG] 2022-08-19 11:06:05.034 [main] boardMapper.selectBoardCountByFilters debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:06:05.034 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@45d64d27] - 
+[DEBUG] 2022-08-19 11:06:05.034 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@45d64d27] - 
+[DEBUG] 2022-08-19 11:06:05.034 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1171672359 to pool. - 
+[DEBUG] 2022-08-19 11:06:05.040 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.040 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.041 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.041 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.058 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:05.081 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 208513211. - 
+[DEBUG] 2022-08-19 11:06:05.082 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@c6da8bb] - 
+[DEBUG] 2022-08-19 11:06:05.082 [main] boardMapper.selectBoardListByFilters debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS = 'Y' AND B.TYPE IN ( ? , ? ) ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:06:05.083 [main] boardMapper.selectBoardListByFilters debug - ==> Parameters: B2(String), B3(String) - 
+[DEBUG] 2022-08-19 11:06:05.085 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@c6da8bb] - 
+[DEBUG] 2022-08-19 11:06:05.086 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@c6da8bb] - 
+[DEBUG] 2022-08-19 11:06:05.086 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 208513211 to pool. - 
+[DEBUG] 2022-08-19 11:06:05.096 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.096 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.096 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.096 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.116 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:05.136 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 427226423. - 
+[DEBUG] 2022-08-19 11:06:05.136 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@1976f537] - 
+[DEBUG] 2022-08-19 11:06:05.137 [main] boardMapper.selectBoardCountByFilters debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD WHERE STATUS='Y' AND TYPE IN ( ? ) - 
+[DEBUG] 2022-08-19 11:06:05.137 [main] boardMapper.selectBoardCountByFilters debug - ==> Parameters: B3(String) - 
+[DEBUG] 2022-08-19 11:06:05.137 [main] boardMapper.selectBoardCountByFilters debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:06:05.138 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@1976f537] - 
+[DEBUG] 2022-08-19 11:06:05.138 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@1976f537] - 
+[DEBUG] 2022-08-19 11:06:05.138 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 427226423 to pool. - 
+[DEBUG] 2022-08-19 11:06:05.142 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.143 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.143 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.143 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.158 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:05.181 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 2016482777. - 
+[DEBUG] 2022-08-19 11:06:05.181 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@783115d9] - 
+[DEBUG] 2022-08-19 11:06:05.181 [main] boardMapper.selectBoardListByFilters debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS = 'Y' AND B.TYPE IN ( ? ) ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:06:05.181 [main] boardMapper.selectBoardListByFilters debug - ==> Parameters: B3(String) - 
+[DEBUG] 2022-08-19 11:06:05.182 [main] boardMapper.selectBoardListByFilters debug - <==      Total: 5 - 
+[DEBUG] 2022-08-19 11:06:05.183 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@783115d9] - 
+[DEBUG] 2022-08-19 11:06:05.183 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@783115d9] - 
+[DEBUG] 2022-08-19 11:06:05.183 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 2016482777 to pool. - 
+[DEBUG] 2022-08-19 11:06:05.189 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.190 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.190 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.190 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.202 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:05.219 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 225753796. - 
+[DEBUG] 2022-08-19 11:06:05.219 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@d74bac4] - 
+[DEBUG] 2022-08-19 11:06:05.219 [main] boardMapper.selectBoardByNo debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CONTENT, B.TYPE, B.CREATE_DATE, B.MODIFY_DATE, R.NO AS "R_NO", R.BOARD_NO AS "R_BOARD_NO", R.CONTENT AS "R_CONTENT", M2.ID AS "R_ID", R.CREATE_DATE AS "R_CREATE_DATE", R.MODIFY_DATE AS "R_MODIFY_DATE" FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) LEFT JOIN REPLY R ON(B.NO = R.BOARD_NO) LEFT JOIN MEMBER M2 ON(R.WRITER_NO = M2.NO) WHERE B.STATUS = 'Y' AND B.NO = 122 - 
+[DEBUG] 2022-08-19 11:06:05.219 [main] boardMapper.selectBoardByNo debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:06:05.222 [main] boardMapper.selectBoardByNo debug - <==      Total: 2 - 
+[DEBUG] 2022-08-19 11:06:05.222 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@d74bac4] - 
+[DEBUG] 2022-08-19 11:06:05.222 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@d74bac4] - 
+[DEBUG] 2022-08-19 11:06:05.222 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 225753796 to pool. - 
+[DEBUG] 2022-08-19 11:06:05.232 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.232 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.232 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.232 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.244 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:05.260 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1525241607. - 
+[DEBUG] 2022-08-19 11:06:05.260 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@5ae95707] - 
+[DEBUG] 2022-08-19 11:06:05.260 [main] boardMapper.insertBoard debug - ==>  Preparing: INSERT INTO BOARD ( NO, WRITER_NO, TITLE, CONTENT, ORIGINAL_FILENAME, RENAMED_FILENAME, READCOUNT, STATUS, CREATE_DATE, MODIFY_DATE, TYPE ) VALUES( SEQ_BOARD_NO.NEXTVAL, ?, ?, ?, ?, ?, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT ) - 
+[DEBUG] 2022-08-19 11:06:05.263 [main] boardMapper.insertBoard debug - ==> Parameters: 2(Integer), mybatis 게시글(String), mybatis로 게시글을 작성하였습니다.(String), test.txt(String), test.txt(String) - 
+[DEBUG] 2022-08-19 11:06:05.265 [main] boardMapper.insertBoard debug - <==    Updates: 1 - 
+[DEBUG] 2022-08-19 11:06:05.273 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.274 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.275 [main] apache.ibatis.transaction.jdbc.JdbcTransaction commit - Committing JDBC Connection [oracle.jdbc.driver.T4CConnection@5ae95707] - 
+[DEBUG] 2022-08-19 11:06:05.279 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.279 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@5ae95707] - 
+[DEBUG] 2022-08-19 11:06:05.279 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@5ae95707] - 
+[DEBUG] 2022-08-19 11:06:05.279 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1525241607 to pool. - 
+[DEBUG] 2022-08-19 11:06:05.279 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.280 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.281 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.284 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.285 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.285 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.285 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.297 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:05.318 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1141811719. - 
+[DEBUG] 2022-08-19 11:06:05.318 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@440eaa07] - 
+[DEBUG] 2022-08-19 11:06:05.319 [main] boardMapper.selectBoardByNo debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CONTENT, B.TYPE, B.CREATE_DATE, B.MODIFY_DATE, R.NO AS "R_NO", R.BOARD_NO AS "R_BOARD_NO", R.CONTENT AS "R_CONTENT", M2.ID AS "R_ID", R.CREATE_DATE AS "R_CREATE_DATE", R.MODIFY_DATE AS "R_MODIFY_DATE" FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) LEFT JOIN REPLY R ON(B.NO = R.BOARD_NO) LEFT JOIN MEMBER M2 ON(R.WRITER_NO = M2.NO) WHERE B.STATUS = 'Y' AND B.NO = 196 - 
+[DEBUG] 2022-08-19 11:06:05.319 [main] boardMapper.selectBoardByNo debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:06:05.322 [main] boardMapper.selectBoardByNo debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:06:05.322 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@440eaa07] - 
+[DEBUG] 2022-08-19 11:06:05.322 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@440eaa07] - 
+[DEBUG] 2022-08-19 11:06:05.322 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1141811719 to pool. - 
+[DEBUG] 2022-08-19 11:06:05.327 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.327 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.327 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.327 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.338 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:05.353 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1329938019. - 
+[DEBUG] 2022-08-19 11:06:05.353 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@4f453e63] - 
+[DEBUG] 2022-08-19 11:06:05.353 [main] boardMapper.selectBoardCount debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD WHERE STATUS='Y' - 
+[DEBUG] 2022-08-19 11:06:05.353 [main] boardMapper.selectBoardCount debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:06:05.354 [main] boardMapper.selectBoardCount debug - <==      Total: 1 - 
+[INFO ] 2022-08-19 11:06:05.354 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 156 - 
+[DEBUG] 2022-08-19 11:06:05.354 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 156 - 
+[DEBUG] 2022-08-19 11:06:05.354 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@4f453e63] - 
+[DEBUG] 2022-08-19 11:06:05.354 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4f453e63] - 
+[DEBUG] 2022-08-19 11:06:05.354 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1329938019 to pool. - 
+[DEBUG] 2022-08-19 11:06:05.358 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.358 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.358 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.358 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.370 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:05.392 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1998371610. - 
+[DEBUG] 2022-08-19 11:06:05.392 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@771cbb1a] - 
+[DEBUG] 2022-08-19 11:06:05.392 [main] boardMapper.selectAll debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS = 'Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:06:05.392 [main] boardMapper.selectAll debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:06:05.394 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@771cbb1a] - 
+[DEBUG] 2022-08-19 11:06:05.394 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@771cbb1a] - 
+[DEBUG] 2022-08-19 11:06:05.394 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1998371610 to pool. - 
+[DEBUG] 2022-08-19 11:06:05.411 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.411 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.411 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.411 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.426 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:05.451 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1191863711. - 
+[DEBUG] 2022-08-19 11:06:05.451 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@470a659f] - 
+[DEBUG] 2022-08-19 11:06:05.451 [main] boardMapper.updateBoard debug - ==>  Preparing: UPDATE BOARD SET TITLE=?, CONTENT=?, ORIGINAL_FILENAME=?, RENAMED_FILENAME=?, MODIFY_DATE=SYSDATE WHERE NO=? - 
+[DEBUG] 2022-08-19 11:06:05.451 [main] boardMapper.updateBoard debug - ==> Parameters: mybatis 게시글 - 수정(String), mybatis로 게시글을 작성하였습니다. - 수정(String), sample.txt(String), sample.txt(String), 196(Integer) - 
+[DEBUG] 2022-08-19 11:06:05.452 [main] boardMapper.updateBoard debug - <==    Updates: 1 - 
+[DEBUG] 2022-08-19 11:06:05.453 [main] apache.ibatis.transaction.jdbc.JdbcTransaction commit - Committing JDBC Connection [oracle.jdbc.driver.T4CConnection@470a659f] - 
+[DEBUG] 2022-08-19 11:06:05.453 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@470a659f] - 
+[DEBUG] 2022-08-19 11:06:05.453 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@470a659f] - 
+[DEBUG] 2022-08-19 11:06:05.453 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1191863711 to pool. - 
+[DEBUG] 2022-08-19 11:06:05.461 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.461 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.461 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.461 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.476 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:05.497 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1195670735. - 
+[DEBUG] 2022-08-19 11:06:05.498 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@47447ccf] - 
+[DEBUG] 2022-08-19 11:06:05.498 [main] boardMapper.selectBoardByNo debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CONTENT, B.TYPE, B.CREATE_DATE, B.MODIFY_DATE, R.NO AS "R_NO", R.BOARD_NO AS "R_BOARD_NO", R.CONTENT AS "R_CONTENT", M2.ID AS "R_ID", R.CREATE_DATE AS "R_CREATE_DATE", R.MODIFY_DATE AS "R_MODIFY_DATE" FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) LEFT JOIN REPLY R ON(B.NO = R.BOARD_NO) LEFT JOIN MEMBER M2 ON(R.WRITER_NO = M2.NO) WHERE B.STATUS = 'Y' AND B.NO = 196 - 
+[DEBUG] 2022-08-19 11:06:05.498 [main] boardMapper.selectBoardByNo debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:06:05.499 [main] boardMapper.selectBoardByNo debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:06:05.500 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@47447ccf] - 
+[DEBUG] 2022-08-19 11:06:05.500 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@47447ccf] - 
+[DEBUG] 2022-08-19 11:06:05.500 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1195670735 to pool. - 
+[DEBUG] 2022-08-19 11:06:05.508 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.508 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.509 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.509 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.524 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:05.548 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1260012504. - 
+[DEBUG] 2022-08-19 11:06:05.548 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@4b1a43d8] - 
+[DEBUG] 2022-08-19 11:06:05.548 [main] boardMapper.selectBoardCount debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD WHERE STATUS='Y' - 
+[DEBUG] 2022-08-19 11:06:05.549 [main] boardMapper.selectBoardCount debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:06:05.550 [main] boardMapper.selectBoardCount debug - <==      Total: 1 - 
+[INFO ] 2022-08-19 11:06:05.550 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 156 - 
+[DEBUG] 2022-08-19 11:06:05.550 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 156 - 
+[DEBUG] 2022-08-19 11:06:05.550 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@4b1a43d8] - 
+[DEBUG] 2022-08-19 11:06:05.550 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4b1a43d8] - 
+[DEBUG] 2022-08-19 11:06:05.550 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1260012504 to pool. - 
+[DEBUG] 2022-08-19 11:06:05.556 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.556 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.556 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.556 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.575 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:05.597 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 662045021. - 
+[DEBUG] 2022-08-19 11:06:05.597 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@2776015d] - 
+[DEBUG] 2022-08-19 11:06:05.597 [main] boardMapper.selectAll debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS = 'Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:06:05.597 [main] boardMapper.selectAll debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:06:05.599 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@2776015d] - 
+[DEBUG] 2022-08-19 11:06:05.599 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2776015d] - 
+[DEBUG] 2022-08-19 11:06:05.599 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 662045021 to pool. - 
+[DEBUG] 2022-08-19 11:06:05.605 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.605 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.606 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.606 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.618 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:05.636 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1969969319. - 
+[DEBUG] 2022-08-19 11:06:05.637 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@756b58a7] - 
+[DEBUG] 2022-08-19 11:06:05.637 [main] boardMapper.updateStatus debug - ==>  Preparing: UPDATE BOARD SET STATUS = ? WHERE NO = ? - 
+[DEBUG] 2022-08-19 11:06:05.637 [main] boardMapper.updateStatus debug - ==> Parameters: N(String), 196(Integer) - 
+[DEBUG] 2022-08-19 11:06:05.637 [main] boardMapper.updateStatus debug - <==    Updates: 1 - 
+[DEBUG] 2022-08-19 11:06:05.637 [main] apache.ibatis.transaction.jdbc.JdbcTransaction commit - Committing JDBC Connection [oracle.jdbc.driver.T4CConnection@756b58a7] - 
+[DEBUG] 2022-08-19 11:06:05.638 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@756b58a7] - 
+[DEBUG] 2022-08-19 11:06:05.638 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@756b58a7] - 
+[DEBUG] 2022-08-19 11:06:05.638 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1969969319 to pool. - 
+[DEBUG] 2022-08-19 11:06:05.643 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.643 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.643 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.643 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:06:05.654 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:06:05.674 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1418550995. - 
+[DEBUG] 2022-08-19 11:06:05.674 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@548d5ed3] - 
+[DEBUG] 2022-08-19 11:06:05.674 [main] boardMapper.selectBoardByNo debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CONTENT, B.TYPE, B.CREATE_DATE, B.MODIFY_DATE, R.NO AS "R_NO", R.BOARD_NO AS "R_BOARD_NO", R.CONTENT AS "R_CONTENT", M2.ID AS "R_ID", R.CREATE_DATE AS "R_CREATE_DATE", R.MODIFY_DATE AS "R_MODIFY_DATE" FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) LEFT JOIN REPLY R ON(B.NO = R.BOARD_NO) LEFT JOIN MEMBER M2 ON(R.WRITER_NO = M2.NO) WHERE B.STATUS = 'Y' AND B.NO = 196 - 
+[DEBUG] 2022-08-19 11:06:05.675 [main] boardMapper.selectBoardByNo debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:06:05.675 [main] boardMapper.selectBoardByNo debug - <==      Total: 0 - 
+[DEBUG] 2022-08-19 11:06:05.675 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@548d5ed3] - 
+[DEBUG] 2022-08-19 11:06:05.675 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@548d5ed3] - 
+[DEBUG] 2022-08-19 11:06:05.675 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1418550995 to pool. - 
+[DEBUG] 2022-08-19 11:12:06.076 [main] org.apache.ibatis.logging.LogFactory setImplementation - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter. - 
+[DEBUG] 2022-08-19 11:12:06.085 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.085 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.085 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.085 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.176 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:06.441 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1865617081. - 
+[DEBUG] 2022-08-19 11:12:06.441 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@6f330eb9] - 
+[DEBUG] 2022-08-19 11:12:06.444 [main] boardMapper.selectBoardCount debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD WHERE STATUS='Y' - 
+[DEBUG] 2022-08-19 11:12:06.515 [main] boardMapper.selectBoardCount debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:12:06.540 [main] boardMapper.selectBoardCount debug - <==      Total: 1 - 
+[INFO ] 2022-08-19 11:12:06.541 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 155 - 
+[DEBUG] 2022-08-19 11:12:06.541 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 155 - 
+[DEBUG] 2022-08-19 11:12:06.541 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@6f330eb9] - 
+[DEBUG] 2022-08-19 11:12:06.542 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@6f330eb9] - 
+[DEBUG] 2022-08-19 11:12:06.542 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1865617081 to pool. - 
+[DEBUG] 2022-08-19 11:12:06.648 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.649 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.650 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.650 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.680 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:06.702 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 92575452. - 
+[DEBUG] 2022-08-19 11:12:06.703 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@58496dc] - 
+[DEBUG] 2022-08-19 11:12:06.703 [main] boardMapper.selectBoardCount debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD WHERE STATUS='Y' - 
+[DEBUG] 2022-08-19 11:12:06.704 [main] boardMapper.selectBoardCount debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:12:06.705 [main] boardMapper.selectBoardCount debug - <==      Total: 1 - 
+[INFO ] 2022-08-19 11:12:06.705 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 155 - 
+[DEBUG] 2022-08-19 11:12:06.705 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 155 - 
+[DEBUG] 2022-08-19 11:12:06.705 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@58496dc] - 
+[DEBUG] 2022-08-19 11:12:06.706 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@58496dc] - 
+[DEBUG] 2022-08-19 11:12:06.706 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 92575452 to pool. - 
+[DEBUG] 2022-08-19 11:12:06.718 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.718 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.718 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.719 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.749 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:06.770 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 887230059. - 
+[DEBUG] 2022-08-19 11:12:06.771 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@34e20e6b] - 
+[DEBUG] 2022-08-19 11:12:06.771 [main] boardMapper.selectAll debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS = 'Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:12:06.772 [main] boardMapper.selectAll debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:12:06.782 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@34e20e6b] - 
+[DEBUG] 2022-08-19 11:12:06.782 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@34e20e6b] - 
+[DEBUG] 2022-08-19 11:12:06.782 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 887230059 to pool. - 
+[DEBUG] 2022-08-19 11:12:06.818 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.818 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.819 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.821 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.822 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.822 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.824 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.851 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:06.873 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 2124448375. - 
+[DEBUG] 2022-08-19 11:12:06.873 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@7ea08277] - 
+[DEBUG] 2022-08-19 11:12:06.873 [main] boardMapper.selectBoardCount debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD WHERE STATUS='Y' - 
+[DEBUG] 2022-08-19 11:12:06.873 [main] boardMapper.selectBoardCount debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:12:06.875 [main] boardMapper.selectBoardCount debug - <==      Total: 1 - 
+[INFO ] 2022-08-19 11:12:06.876 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 155 - 
+[DEBUG] 2022-08-19 11:12:06.876 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 155 - 
+[DEBUG] 2022-08-19 11:12:06.876 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@7ea08277] - 
+[DEBUG] 2022-08-19 11:12:06.876 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7ea08277] - 
+[DEBUG] 2022-08-19 11:12:06.876 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 2124448375 to pool. - 
+[DEBUG] 2022-08-19 11:12:06.884 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.884 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.884 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.884 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.905 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:06.926 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1286643712. - 
+[DEBUG] 2022-08-19 11:12:06.927 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@4cb0a000] - 
+[DEBUG] 2022-08-19 11:12:06.927 [main] boardMapper.selectAll debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS = 'Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:12:06.927 [main] boardMapper.selectAll debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:12:06.934 [main] boardMapper.selectAll debug - <==      Total: 155 - 
+[DEBUG] 2022-08-19 11:12:06.935 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@4cb0a000] - 
+[DEBUG] 2022-08-19 11:12:06.935 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4cb0a000] - 
+[DEBUG] 2022-08-19 11:12:06.935 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1286643712 to pool. - 
+[DEBUG] 2022-08-19 11:12:06.951 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.951 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.951 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.951 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:06.993 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:07.011 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 939625314. - 
+[DEBUG] 2022-08-19 11:12:07.011 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@38018b62] - 
+[DEBUG] 2022-08-19 11:12:07.011 [main] boardMapper.selectBoardCountByKeyWord debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS='Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:12:07.011 [main] boardMapper.selectBoardCountByKeyWord debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:12:07.012 [main] boardMapper.selectBoardCountByKeyWord debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:12:07.012 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@38018b62] - 
+[DEBUG] 2022-08-19 11:12:07.012 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@38018b62] - 
+[DEBUG] 2022-08-19 11:12:07.012 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 939625314 to pool. - 
+[DEBUG] 2022-08-19 11:12:07.021 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.021 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.021 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.021 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.041 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:07.063 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 2123681939. - 
+[DEBUG] 2022-08-19 11:12:07.064 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@7e94d093] - 
+[DEBUG] 2022-08-19 11:12:07.064 [main] boardMapper.selectBoardCountByKeyWord debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS='Y' AND M.ID LIKE '%' || ? || '%' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:12:07.064 [main] boardMapper.selectBoardCountByKeyWord debug - ==> Parameters: ad(String) - 
+[DEBUG] 2022-08-19 11:12:07.066 [main] boardMapper.selectBoardCountByKeyWord debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:12:07.067 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@7e94d093] - 
+[DEBUG] 2022-08-19 11:12:07.067 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@7e94d093] - 
+[DEBUG] 2022-08-19 11:12:07.067 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 2123681939 to pool. - 
+[DEBUG] 2022-08-19 11:12:07.076 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.076 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.076 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.076 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.097 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:07.120 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 81355344. - 
+[DEBUG] 2022-08-19 11:12:07.120 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@4d96250] - 
+[DEBUG] 2022-08-19 11:12:07.121 [main] boardMapper.selectBoardCountByKeyWord debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS='Y' AND B.TITLE LIKE '%' || ? || '%' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:12:07.121 [main] boardMapper.selectBoardCountByKeyWord debug - ==> Parameters: 50(String) - 
+[DEBUG] 2022-08-19 11:12:07.122 [main] boardMapper.selectBoardCountByKeyWord debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:12:07.123 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@4d96250] - 
+[DEBUG] 2022-08-19 11:12:07.124 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4d96250] - 
+[DEBUG] 2022-08-19 11:12:07.124 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 81355344 to pool. - 
+[DEBUG] 2022-08-19 11:12:07.136 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.136 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.136 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.136 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.158 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:07.179 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 109175108. - 
+[DEBUG] 2022-08-19 11:12:07.179 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@681e144] - 
+[DEBUG] 2022-08-19 11:12:07.179 [main] boardMapper.selectBoardCountByKeyWord debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS='Y' AND B.CONTENT LIKE '%' || ? || '%' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:12:07.179 [main] boardMapper.selectBoardCountByKeyWord debug - ==> Parameters: 13(String) - 
+[DEBUG] 2022-08-19 11:12:07.180 [main] boardMapper.selectBoardCountByKeyWord debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:12:07.181 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@681e144] - 
+[DEBUG] 2022-08-19 11:12:07.181 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@681e144] - 
+[DEBUG] 2022-08-19 11:12:07.181 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 109175108 to pool. - 
+[DEBUG] 2022-08-19 11:12:07.196 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.197 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.197 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.197 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.225 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.227 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.229 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.231 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.234 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.236 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.236 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:07.255 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 870019773. - 
+[DEBUG] 2022-08-19 11:12:07.255 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@33db72bd] - 
+[DEBUG] 2022-08-19 11:12:07.255 [main] boardMapper.selectBoardCountByKeyWord debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS='Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:12:07.255 [main] boardMapper.selectBoardCountByKeyWord debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:12:07.257 [main] boardMapper.selectBoardCountByKeyWord debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:12:07.257 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@33db72bd] - 
+[DEBUG] 2022-08-19 11:12:07.257 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@33db72bd] - 
+[DEBUG] 2022-08-19 11:12:07.257 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 870019773 to pool. - 
+[DEBUG] 2022-08-19 11:12:07.263 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.263 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.263 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.264 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.280 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:07.301 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 62156248. - 
+[DEBUG] 2022-08-19 11:12:07.302 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b46dd8] - 
+[DEBUG] 2022-08-19 11:12:07.302 [main] boardMapper.selectBoardListByKeyWord debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS = 'Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:12:07.303 [main] boardMapper.selectBoardListByKeyWord debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:12:07.307 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3b46dd8] - 
+[DEBUG] 2022-08-19 11:12:07.307 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3b46dd8] - 
+[DEBUG] 2022-08-19 11:12:07.308 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 62156248 to pool. - 
+[DEBUG] 2022-08-19 11:12:07.321 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.321 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.321 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.323 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.351 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:07.378 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1713129148. - 
+[DEBUG] 2022-08-19 11:12:07.378 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@661c46bc] - 
+[DEBUG] 2022-08-19 11:12:07.378 [main] boardMapper.selectBoardCountByKeyWord debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS='Y' AND M.ID LIKE '%' || ? || '%' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:12:07.379 [main] boardMapper.selectBoardCountByKeyWord debug - ==> Parameters: ad(String) - 
+[DEBUG] 2022-08-19 11:12:07.381 [main] boardMapper.selectBoardCountByKeyWord debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:12:07.381 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@661c46bc] - 
+[DEBUG] 2022-08-19 11:12:07.383 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@661c46bc] - 
+[DEBUG] 2022-08-19 11:12:07.383 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1713129148 to pool. - 
+[DEBUG] 2022-08-19 11:12:07.391 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.391 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.391 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.391 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.414 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:07.438 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 925936450. - 
+[DEBUG] 2022-08-19 11:12:07.438 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3730ab42] - 
+[DEBUG] 2022-08-19 11:12:07.439 [main] boardMapper.selectBoardListByKeyWord debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE M.ID LIKE '%' || ? || '%' AND B.STATUS = 'Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:12:07.439 [main] boardMapper.selectBoardListByKeyWord debug - ==> Parameters: ad(String) - 
+[DEBUG] 2022-08-19 11:12:07.441 [main] boardMapper.selectBoardListByKeyWord debug - <==      Total: 3 - 
+[DEBUG] 2022-08-19 11:12:07.442 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3730ab42] - 
+[DEBUG] 2022-08-19 11:12:07.443 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3730ab42] - 
+[DEBUG] 2022-08-19 11:12:07.443 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 925936450 to pool. - 
+[DEBUG] 2022-08-19 11:12:07.453 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.453 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.453 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.453 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.492 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:07.520 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1249547869. - 
+[DEBUG] 2022-08-19 11:12:07.521 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@4a7a965d] - 
+[DEBUG] 2022-08-19 11:12:07.521 [main] boardMapper.selectBoardCountByKeyWord debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS='Y' AND B.TITLE LIKE '%' || ? || '%' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:12:07.521 [main] boardMapper.selectBoardCountByKeyWord debug - ==> Parameters: 50(String) - 
+[DEBUG] 2022-08-19 11:12:07.522 [main] boardMapper.selectBoardCountByKeyWord debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:12:07.523 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@4a7a965d] - 
+[DEBUG] 2022-08-19 11:12:07.523 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4a7a965d] - 
+[DEBUG] 2022-08-19 11:12:07.523 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1249547869 to pool. - 
+[DEBUG] 2022-08-19 11:12:07.529 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.529 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.529 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.529 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.548 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:07.580 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1819897025. - 
+[DEBUG] 2022-08-19 11:12:07.580 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@6c796cc1] - 
+[DEBUG] 2022-08-19 11:12:07.580 [main] boardMapper.selectBoardListByKeyWord debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.TITLE LIKE '%' || ? || '%' AND B.STATUS = 'Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:12:07.581 [main] boardMapper.selectBoardListByKeyWord debug - ==> Parameters: 50(String) - 
+[DEBUG] 2022-08-19 11:12:07.585 [main] boardMapper.selectBoardListByKeyWord debug - <==      Total: 2 - 
+[DEBUG] 2022-08-19 11:12:07.585 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@6c796cc1] - 
+[DEBUG] 2022-08-19 11:12:07.585 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@6c796cc1] - 
+[DEBUG] 2022-08-19 11:12:07.585 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1819897025 to pool. - 
+[DEBUG] 2022-08-19 11:12:07.595 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.596 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.596 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.597 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.616 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:07.637 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1002410023. - 
+[DEBUG] 2022-08-19 11:12:07.637 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3bbf9027] - 
+[DEBUG] 2022-08-19 11:12:07.637 [main] boardMapper.selectBoardCountByKeyWord debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS='Y' AND B.CONTENT LIKE '%' || ? || '%' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:12:07.637 [main] boardMapper.selectBoardCountByKeyWord debug - ==> Parameters: 13(String) - 
+[DEBUG] 2022-08-19 11:12:07.638 [main] boardMapper.selectBoardCountByKeyWord debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:12:07.639 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3bbf9027] - 
+[DEBUG] 2022-08-19 11:12:07.639 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3bbf9027] - 
+[DEBUG] 2022-08-19 11:12:07.639 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1002410023 to pool. - 
+[DEBUG] 2022-08-19 11:12:07.645 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.645 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.645 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.645 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.661 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:07.685 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 204568533. - 
+[DEBUG] 2022-08-19 11:12:07.685 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@c3177d5] - 
+[DEBUG] 2022-08-19 11:12:07.685 [main] boardMapper.selectBoardListByKeyWord debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.CONTENT LIKE '%' || ? || '%' AND B.STATUS = 'Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:12:07.685 [main] boardMapper.selectBoardListByKeyWord debug - ==> Parameters: 13(String) - 
+[DEBUG] 2022-08-19 11:12:07.687 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@c3177d5] - 
+[DEBUG] 2022-08-19 11:12:07.687 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@c3177d5] - 
+[DEBUG] 2022-08-19 11:12:07.688 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 204568533 to pool. - 
+[DEBUG] 2022-08-19 11:12:07.700 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.701 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.701 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.701 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.727 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:07.753 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1221433900. - 
+[DEBUG] 2022-08-19 11:12:07.754 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@48cd9a2c] - 
+[DEBUG] 2022-08-19 11:12:07.754 [main] boardMapper.selectBoardCountByFilters debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD WHERE STATUS='Y' AND TYPE IN ( ? , ? ) - 
+[DEBUG] 2022-08-19 11:12:07.754 [main] boardMapper.selectBoardCountByFilters debug - ==> Parameters: B2(String), B3(String) - 
+[DEBUG] 2022-08-19 11:12:07.755 [main] boardMapper.selectBoardCountByFilters debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:12:07.755 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@48cd9a2c] - 
+[DEBUG] 2022-08-19 11:12:07.756 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@48cd9a2c] - 
+[DEBUG] 2022-08-19 11:12:07.756 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1221433900 to pool. - 
+[DEBUG] 2022-08-19 11:12:07.764 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.765 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.765 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.765 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.785 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:07.806 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 187649742. - 
+[DEBUG] 2022-08-19 11:12:07.807 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@b2f4ece] - 
+[DEBUG] 2022-08-19 11:12:07.807 [main] boardMapper.selectBoardCountByFilters debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD WHERE STATUS='Y' AND TYPE IN ( ? , ? ) - 
+[DEBUG] 2022-08-19 11:12:07.807 [main] boardMapper.selectBoardCountByFilters debug - ==> Parameters: B2(String), B3(String) - 
+[DEBUG] 2022-08-19 11:12:07.808 [main] boardMapper.selectBoardCountByFilters debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:12:07.808 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@b2f4ece] - 
+[DEBUG] 2022-08-19 11:12:07.808 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@b2f4ece] - 
+[DEBUG] 2022-08-19 11:12:07.808 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 187649742 to pool. - 
+[DEBUG] 2022-08-19 11:12:07.817 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.817 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.818 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.818 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.837 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.838 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.841 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.842 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.844 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.845 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:07.846 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.848 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.850 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.852 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.854 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.872 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 81194567. - 
+[DEBUG] 2022-08-19 11:12:07.872 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@4d6ee47] - 
+[DEBUG] 2022-08-19 11:12:07.872 [main] boardMapper.selectBoardCountByFilters debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD WHERE STATUS='Y' AND TYPE IN ( ? , ? ) - 
+[DEBUG] 2022-08-19 11:12:07.872 [main] boardMapper.selectBoardCountByFilters debug - ==> Parameters: B2(String), B3(String) - 
+[DEBUG] 2022-08-19 11:12:07.873 [main] boardMapper.selectBoardCountByFilters debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:12:07.873 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@4d6ee47] - 
+[DEBUG] 2022-08-19 11:12:07.873 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4d6ee47] - 
+[DEBUG] 2022-08-19 11:12:07.873 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 81194567 to pool. - 
+[DEBUG] 2022-08-19 11:12:07.879 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.879 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.879 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.880 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.900 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:07.927 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 917704874. - 
+[DEBUG] 2022-08-19 11:12:07.928 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@36b310aa] - 
+[DEBUG] 2022-08-19 11:12:07.928 [main] boardMapper.selectBoardListByFilters debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS = 'Y' AND B.TYPE IN ( ? , ? ) ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:12:07.929 [main] boardMapper.selectBoardListByFilters debug - ==> Parameters: B2(String), B3(String) - 
+[DEBUG] 2022-08-19 11:12:07.932 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@36b310aa] - 
+[DEBUG] 2022-08-19 11:12:07.932 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@36b310aa] - 
+[DEBUG] 2022-08-19 11:12:07.932 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 917704874 to pool. - 
+[DEBUG] 2022-08-19 11:12:07.941 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.941 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.942 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.942 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.960 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:07.988 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 956337311. - 
+[DEBUG] 2022-08-19 11:12:07.988 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@39008c9f] - 
+[DEBUG] 2022-08-19 11:12:07.988 [main] boardMapper.selectBoardCountByFilters debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD WHERE STATUS='Y' AND TYPE IN ( ? ) - 
+[DEBUG] 2022-08-19 11:12:07.988 [main] boardMapper.selectBoardCountByFilters debug - ==> Parameters: B3(String) - 
+[DEBUG] 2022-08-19 11:12:07.989 [main] boardMapper.selectBoardCountByFilters debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:12:07.989 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@39008c9f] - 
+[DEBUG] 2022-08-19 11:12:07.990 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@39008c9f] - 
+[DEBUG] 2022-08-19 11:12:07.990 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 956337311 to pool. - 
+[DEBUG] 2022-08-19 11:12:07.994 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.994 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.994 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:07.994 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.005 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:08.022 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 390034407. - 
+[DEBUG] 2022-08-19 11:12:08.023 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@173f73e7] - 
+[DEBUG] 2022-08-19 11:12:08.023 [main] boardMapper.selectBoardListByFilters debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS = 'Y' AND B.TYPE IN ( ? ) ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:12:08.023 [main] boardMapper.selectBoardListByFilters debug - ==> Parameters: B3(String) - 
+[DEBUG] 2022-08-19 11:12:08.024 [main] boardMapper.selectBoardListByFilters debug - <==      Total: 5 - 
+[DEBUG] 2022-08-19 11:12:08.024 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@173f73e7] - 
+[DEBUG] 2022-08-19 11:12:08.024 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@173f73e7] - 
+[DEBUG] 2022-08-19 11:12:08.024 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 390034407 to pool. - 
+[DEBUG] 2022-08-19 11:12:08.031 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.032 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.032 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.032 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.044 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:08.061 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1266435158. - 
+[DEBUG] 2022-08-19 11:12:08.061 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@4b7c4456] - 
+[DEBUG] 2022-08-19 11:12:08.061 [main] boardMapper.selectBoardByNo debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CONTENT, B.TYPE, B.CREATE_DATE, B.MODIFY_DATE, R.NO AS "R_NO", R.BOARD_NO AS "R_BOARD_NO", R.CONTENT AS "R_CONTENT", M2.ID AS "R_ID", R.CREATE_DATE AS "R_CREATE_DATE", R.MODIFY_DATE AS "R_MODIFY_DATE" FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) LEFT JOIN REPLY R ON(B.NO = R.BOARD_NO) LEFT JOIN MEMBER M2 ON(R.WRITER_NO = M2.NO) WHERE B.STATUS = 'Y' AND B.NO = 122 - 
+[DEBUG] 2022-08-19 11:12:08.061 [main] boardMapper.selectBoardByNo debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:12:08.064 [main] boardMapper.selectBoardByNo debug - <==      Total: 2 - 
+[DEBUG] 2022-08-19 11:12:08.064 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@4b7c4456] - 
+[DEBUG] 2022-08-19 11:12:08.064 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4b7c4456] - 
+[DEBUG] 2022-08-19 11:12:08.064 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1266435158 to pool. - 
+[DEBUG] 2022-08-19 11:12:08.075 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.075 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.075 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.075 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.086 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:08.108 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 987805552. - 
+[DEBUG] 2022-08-19 11:12:08.108 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.108 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ae0b770] - 
+[DEBUG] 2022-08-19 11:12:08.108 [main] boardMapper.insertBoard debug - ==>  Preparing: INSERT INTO BOARD ( NO, WRITER_NO, TITLE, CONTENT, ORIGINAL_FILENAME, RENAMED_FILENAME, READCOUNT, STATUS, CREATE_DATE, MODIFY_DATE, TYPE ) VALUES( SEQ_BOARD_NO.NEXTVAL, ?, ?, ?, ?, ?, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT ) - 
+[DEBUG] 2022-08-19 11:12:08.108 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.110 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.110 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.111 [Finalizer] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.112 [main] boardMapper.insertBoard debug - ==> Parameters: 2(Integer), mybatis 게시글(String), mybatis로 게시글을 작성하였습니다.(String), test.txt(String), test.txt(String) - 
+[DEBUG] 2022-08-19 11:12:08.117 [main] boardMapper.insertBoard debug - <==    Updates: 1 - 
+[DEBUG] 2022-08-19 11:12:08.121 [main] apache.ibatis.transaction.jdbc.JdbcTransaction commit - Committing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ae0b770] - 
+[DEBUG] 2022-08-19 11:12:08.127 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@3ae0b770] - 
+[DEBUG] 2022-08-19 11:12:08.127 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@3ae0b770] - 
+[DEBUG] 2022-08-19 11:12:08.128 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 987805552 to pool. - 
+[DEBUG] 2022-08-19 11:12:08.133 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.133 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.133 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.133 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.143 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:08.161 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 112200409. - 
+[DEBUG] 2022-08-19 11:12:08.161 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@6b00ad9] - 
+[DEBUG] 2022-08-19 11:12:08.162 [main] boardMapper.selectBoardByNo debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CONTENT, B.TYPE, B.CREATE_DATE, B.MODIFY_DATE, R.NO AS "R_NO", R.BOARD_NO AS "R_BOARD_NO", R.CONTENT AS "R_CONTENT", M2.ID AS "R_ID", R.CREATE_DATE AS "R_CREATE_DATE", R.MODIFY_DATE AS "R_MODIFY_DATE" FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) LEFT JOIN REPLY R ON(B.NO = R.BOARD_NO) LEFT JOIN MEMBER M2 ON(R.WRITER_NO = M2.NO) WHERE B.STATUS = 'Y' AND B.NO = 197 - 
+[DEBUG] 2022-08-19 11:12:08.162 [main] boardMapper.selectBoardByNo debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:12:08.165 [main] boardMapper.selectBoardByNo debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:12:08.165 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@6b00ad9] - 
+[DEBUG] 2022-08-19 11:12:08.165 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@6b00ad9] - 
+[DEBUG] 2022-08-19 11:12:08.165 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 112200409 to pool. - 
+[DEBUG] 2022-08-19 11:12:08.170 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.170 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.171 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.171 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.180 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:08.196 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1795560878. - 
+[DEBUG] 2022-08-19 11:12:08.196 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@6b0615ae] - 
+[DEBUG] 2022-08-19 11:12:08.196 [main] boardMapper.selectBoardCount debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD WHERE STATUS='Y' - 
+[DEBUG] 2022-08-19 11:12:08.196 [main] boardMapper.selectBoardCount debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:12:08.197 [main] boardMapper.selectBoardCount debug - <==      Total: 1 - 
+[INFO ] 2022-08-19 11:12:08.197 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 156 - 
+[DEBUG] 2022-08-19 11:12:08.197 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 156 - 
+[DEBUG] 2022-08-19 11:12:08.197 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@6b0615ae] - 
+[DEBUG] 2022-08-19 11:12:08.198 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@6b0615ae] - 
+[DEBUG] 2022-08-19 11:12:08.198 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1795560878 to pool. - 
+[DEBUG] 2022-08-19 11:12:08.203 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.203 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.203 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.203 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.215 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:08.236 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 604990529. - 
+[DEBUG] 2022-08-19 11:12:08.237 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@240f6c41] - 
+[DEBUG] 2022-08-19 11:12:08.237 [main] boardMapper.selectAll debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS = 'Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:12:08.237 [main] boardMapper.selectAll debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:12:08.239 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@240f6c41] - 
+[DEBUG] 2022-08-19 11:12:08.240 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@240f6c41] - 
+[DEBUG] 2022-08-19 11:12:08.240 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 604990529 to pool. - 
+[DEBUG] 2022-08-19 11:12:08.255 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.255 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.255 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.255 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.271 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:08.294 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1858493278. - 
+[DEBUG] 2022-08-19 11:12:08.294 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@6ec65b5e] - 
+[DEBUG] 2022-08-19 11:12:08.295 [main] boardMapper.updateBoard debug - ==>  Preparing: UPDATE BOARD SET TITLE=?, CONTENT=?, ORIGINAL_FILENAME=?, RENAMED_FILENAME=?, MODIFY_DATE=SYSDATE WHERE NO=? - 
+[DEBUG] 2022-08-19 11:12:08.295 [main] boardMapper.updateBoard debug - ==> Parameters: mybatis 게시글 - 수정(String), mybatis로 게시글을 작성하였습니다. - 수정(String), sample.txt(String), sample.txt(String), 197(Integer) - 
+[DEBUG] 2022-08-19 11:12:08.296 [main] boardMapper.updateBoard debug - <==    Updates: 1 - 
+[DEBUG] 2022-08-19 11:12:08.296 [main] apache.ibatis.transaction.jdbc.JdbcTransaction commit - Committing JDBC Connection [oracle.jdbc.driver.T4CConnection@6ec65b5e] - 
+[DEBUG] 2022-08-19 11:12:08.297 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@6ec65b5e] - 
+[DEBUG] 2022-08-19 11:12:08.297 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@6ec65b5e] - 
+[DEBUG] 2022-08-19 11:12:08.297 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1858493278 to pool. - 
+[DEBUG] 2022-08-19 11:12:08.302 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.303 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.303 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.303 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.318 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:08.341 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1169894049. - 
+[DEBUG] 2022-08-19 11:12:08.341 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@45bb2aa1] - 
+[DEBUG] 2022-08-19 11:12:08.341 [main] boardMapper.selectBoardByNo debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CONTENT, B.TYPE, B.CREATE_DATE, B.MODIFY_DATE, R.NO AS "R_NO", R.BOARD_NO AS "R_BOARD_NO", R.CONTENT AS "R_CONTENT", M2.ID AS "R_ID", R.CREATE_DATE AS "R_CREATE_DATE", R.MODIFY_DATE AS "R_MODIFY_DATE" FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) LEFT JOIN REPLY R ON(B.NO = R.BOARD_NO) LEFT JOIN MEMBER M2 ON(R.WRITER_NO = M2.NO) WHERE B.STATUS = 'Y' AND B.NO = 197 - 
+[DEBUG] 2022-08-19 11:12:08.342 [main] boardMapper.selectBoardByNo debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:12:08.343 [main] boardMapper.selectBoardByNo debug - <==      Total: 1 - 
+[DEBUG] 2022-08-19 11:12:08.344 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@45bb2aa1] - 
+[DEBUG] 2022-08-19 11:12:08.344 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@45bb2aa1] - 
+[DEBUG] 2022-08-19 11:12:08.344 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1169894049 to pool. - 
+[DEBUG] 2022-08-19 11:12:08.353 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.353 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.353 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.353 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.365 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:08.385 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 804347788. - 
+[DEBUG] 2022-08-19 11:12:08.385 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@2ff15f8c] - 
+[DEBUG] 2022-08-19 11:12:08.385 [main] boardMapper.selectBoardCount debug - ==>  Preparing: SELECT COUNT(*) FROM BOARD WHERE STATUS='Y' - 
+[DEBUG] 2022-08-19 11:12:08.385 [main] boardMapper.selectBoardCount debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:12:08.386 [main] boardMapper.selectBoardCount debug - <==      Total: 1 - 
+[INFO ] 2022-08-19 11:12:08.386 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 156 - 
+[DEBUG] 2022-08-19 11:12:08.386 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 156 - 
+[DEBUG] 2022-08-19 11:12:08.386 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@2ff15f8c] - 
+[DEBUG] 2022-08-19 11:12:08.387 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2ff15f8c] - 
+[DEBUG] 2022-08-19 11:12:08.387 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 804347788 to pool. - 
+[DEBUG] 2022-08-19 11:12:08.390 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.391 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.391 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.391 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.404 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:08.425 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 847174133. - 
+[DEBUG] 2022-08-19 11:12:08.425 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@327ed9f5] - 
+[DEBUG] 2022-08-19 11:12:08.425 [main] boardMapper.selectAll debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CREATE_DATE FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) WHERE B.STATUS = 'Y' ORDER BY B.NO DESC - 
+[DEBUG] 2022-08-19 11:12:08.425 [main] boardMapper.selectAll debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:12:08.427 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@327ed9f5] - 
+[DEBUG] 2022-08-19 11:12:08.427 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@327ed9f5] - 
+[DEBUG] 2022-08-19 11:12:08.427 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 847174133 to pool. - 
+[DEBUG] 2022-08-19 11:12:08.434 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.434 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.434 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.434 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.446 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:08.464 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1142402835. - 
+[DEBUG] 2022-08-19 11:12:08.465 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@4417af13] - 
+[DEBUG] 2022-08-19 11:12:08.465 [main] boardMapper.updateStatus debug - ==>  Preparing: UPDATE BOARD SET STATUS = ? WHERE NO = ? - 
+[DEBUG] 2022-08-19 11:12:08.466 [main] boardMapper.updateStatus debug - ==> Parameters: N(String), 197(Integer) - 
+[DEBUG] 2022-08-19 11:12:08.467 [main] boardMapper.updateStatus debug - <==    Updates: 1 - 
+[DEBUG] 2022-08-19 11:12:08.467 [main] apache.ibatis.transaction.jdbc.JdbcTransaction commit - Committing JDBC Connection [oracle.jdbc.driver.T4CConnection@4417af13] - 
+[DEBUG] 2022-08-19 11:12:08.467 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@4417af13] - 
+[DEBUG] 2022-08-19 11:12:08.467 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@4417af13] - 
+[DEBUG] 2022-08-19 11:12:08.467 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1142402835 to pool. - 
+[DEBUG] 2022-08-19 11:12:08.472 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.473 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.473 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.473 [main] apache.ibatis.datasource.pooled.PooledDataSource forceCloseAll - PooledDataSource forcefully closed/removed all connections. - 
+[DEBUG] 2022-08-19 11:12:08.485 [main] apache.ibatis.transaction.jdbc.JdbcTransaction openConnection - Opening JDBC Connection - 
+[DEBUG] 2022-08-19 11:12:08.505 [main] apache.ibatis.datasource.pooled.PooledDataSource popConnection - Created connection 1519173630. - 
+[DEBUG] 2022-08-19 11:12:08.506 [main] apache.ibatis.transaction.jdbc.JdbcTransaction setDesiredAutoCommit - Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@5a8cbffe] - 
+[DEBUG] 2022-08-19 11:12:08.506 [main] boardMapper.selectBoardByNo debug - ==>  Preparing: SELECT B.NO, B.TITLE, M.ID, B.READCOUNT, B.ORIGINAL_FILENAME, B.RENAMED_FILENAME, B.CONTENT, B.TYPE, B.CREATE_DATE, B.MODIFY_DATE, R.NO AS "R_NO", R.BOARD_NO AS "R_BOARD_NO", R.CONTENT AS "R_CONTENT", M2.ID AS "R_ID", R.CREATE_DATE AS "R_CREATE_DATE", R.MODIFY_DATE AS "R_MODIFY_DATE" FROM BOARD B JOIN MEMBER M ON(B.WRITER_NO = M.NO) LEFT JOIN REPLY R ON(B.NO = R.BOARD_NO) LEFT JOIN MEMBER M2 ON(R.WRITER_NO = M2.NO) WHERE B.STATUS = 'Y' AND B.NO = 197 - 
+[DEBUG] 2022-08-19 11:12:08.506 [main] boardMapper.selectBoardByNo debug - ==> Parameters:  - 
+[DEBUG] 2022-08-19 11:12:08.507 [main] boardMapper.selectBoardByNo debug - <==      Total: 0 - 
+[DEBUG] 2022-08-19 11:12:08.507 [main] apache.ibatis.transaction.jdbc.JdbcTransaction resetAutoCommit - Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@5a8cbffe] - 
+[DEBUG] 2022-08-19 11:12:08.507 [main] apache.ibatis.transaction.jdbc.JdbcTransaction close - Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@5a8cbffe] - 
+[DEBUG] 2022-08-19 11:12:08.507 [main] apache.ibatis.datasource.pooled.PooledDataSource pushConnection - Returned connection 1519173630 to pool. - 

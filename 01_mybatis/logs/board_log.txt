@@ -1,0 +1,5 @@
+[INFO ] 2022-08-19 11:27:51.926 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 155 - 
+[INFO ] 2022-08-19 11:27:52.132 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 155 - 
+[INFO ] 2022-08-19 11:27:52.336 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 155 - 
+[INFO ] 2022-08-19 11:27:53.837 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 156 - 
+[INFO ] 2022-08-19 11:27:54.050 [main] mybatis.board.model.service.BoardServiceImpl getBoardCount - BoardCount : 156 - 
