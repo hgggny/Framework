@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- 
+		Dog dog = new Dog("배추");
+	 -->
+	<bean id="dog" class="com.kh.di.pet.Dog">
+		<constructor-arg name="name" value="배추"/>
+	</bean>
+	
+	<!--  
+	<bean id="dog" class="com.kh.di.pet.Dog" c:name="배추">
+	 -->
+	<!-- 기본 생성자로 만들기
+		Cat cat = new Cat();
+		
+		cat.setName("나비");
+	 -->
+	 
+	 <!--
+	 <bean id="cat" class="com.kh.di.pet.Cat">
+	  property로 초기화 
+	 	<property name="name" value="나비">
+	 	</property>
+	 </bean>
+	  -->
+	<!-- primary="true"  -->
+	<bean id="cat" class="com.kh.di.pet.Cat" primary="true" p:name="나비"/>
+
+</beans>

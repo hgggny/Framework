@@ -7,22 +7,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<!-- 
-		Owner owner = new Owner();
-		→ 기본 생성자로 만들어 주는 과정 !
-		
-		Owner owner = new Owner("바켠진", 29, new Dog("나비"));
-	-->
-	<bean id="owner" class="com.kh.di.owner.Owner">
-		<constructor-arg name="name" value="바켠진" />
-		<constructor-arg name="age" value="29" />
-		<constructor-arg name="pet" ref="dog"/>
-	</bean>
+	<!-- 다른 설정 파일을 가져오기 위해 사용하는 요소 -->
+	<import resource="owner-context.xml"/>
+	<import resource="pet-context.xml"/>
 	
-	<!-- 
-		Dog dog = new Dog("배추");
-	 -->
-	<bean id="dog" class="com.kh.di.pet.Dog">
-		<constructor-arg name="name" value="배추"/>
-	</bean>
+	<context:component-scan base-package="com.kh.di"/>
 </beans>

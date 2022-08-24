@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 
+		Owner owner = new Owner();
+		→ 기본 생성자로 만들어 주는 과정 !
+		
+		Owner owner = new Owner("바켠진", 29, dog);
+	<bean id="park" class="com.kh.di.owner.Owner">
+		<constructor-arg name="name" value="바켠진" />
+		<constructor-arg name="age" value="29" />
+		<constructor-arg name="pet" ref="dog"/>
+	</bean>
+	
+	name 대신 index 사용 : 유지보수하거나 가독성에 떨어진다.  
+	<bean id="park" class="com.kh.di.owner.Owner">
+		<constructor-arg index="0" value="바켠진" />
+		<constructor-arg index="1" value="29" />
+		<constructor-arg index="2" ref="dog"/>
+	</bean>
+	
+	<bean id="park" class="com.kh.di.owner.Owner" c:_0="바켠진" c:_1="29" c:_2-ref="dog"/>	
+	-->
+	<bean id="park" class="com.kh.di.owner.Owner" c:name="바켠진" c:age="29" c:pet-ref="dog"/>
+	
+	
+	<!-- 
+	Owner owner = new Owner();
+	
+	owner.setName("홍길동");
+	owner.setAge("24");
+	owner.setPet(cat);
+	 -->
+	
+		<!--  
+	<bean id="hong" class="com.kh.di.owner.Owner">
+		<property name="name" value="홍길동"/>
+		<property name="age" value="24"/>
+		<property name="pet" ref="dog"/>
+		해당하는 bean이 없을 경우 에러 발생  
+		<property name="pet" ref="cccccc"/>
+		<property name="pet" ref="cat"/>
+	</bean>
+		--> 
+		
+	<!-- c namespace 사용
+	<bean id="hong" class="com.kh.di.owner.Owner" c:name="홍길동" c:age="24" c:pet-ref="cat"/>
+	 -->
+	
+	<!-- p namespace 사용 -->
+	<bean id="hong" class="com.kh.di.owner.Owner" p:name="홍길동" p:age="24" p:pet-ref="cat"/>
+</beans>
