@@ -5,6 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
@@ -24,6 +25,12 @@ class CharacterTest {
 	@Autowired(required = false)
 	private Character character;
 	
+	@Value("${db.driver:OracleDriver}")
+	private String driver;
+	
+	@Value("${db.url:localhost}")
+	private String url;
+	
 	@Test
 	void nothing() {
 	}
@@ -33,5 +40,15 @@ class CharacterTest {
 		System.out.println(character);
 		
 		assertThat(character).isNotNull();
+		assertThat(character.getName()).isNotNull().isEqualTo("현지니어스");
+		assertThat(character.getLevel()).isNotNull().isEqualTo(88);
+	}
+	
+	@Test
+	void propertiesTest() {
+//		System.out.println(driver);
+//		System.out.println(url);
+		assertThat(driver).isNotNull().isEqualTo("oracle.jdbc.driver.OracleDriver");
+	    assertThat(url).isNotNull().isEqualTo("jdbc:oracle:thin:@localhost:1521:xe");
 	}
 }

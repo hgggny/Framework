@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="character" class="com.kh.aop.character.Character" p:name="현지니어스" p:level="99" p:weapon-ref="sword"/>
+	
+	<bean id="sword" class="com.kh.aop.weapon.Sword" p:name="무한의대검"/>
+	
+	<!-- 
+		Aspect로 지정할 객체는 반드시 빈으로 선언되어야 한다. 
+	 -->
+	<bean id="characterAspect" class="com.kh.aop.aspect.CharacterAspect"/>
+	
+	<!-- 
+		포인트 커트 표현식
+			- 스프링 AOP에서 포인트 커트는 포인트 커트 표현식을 이용해서 정의한다. 
+			- 스프링 AOP에서 지원되는 포인트 커트 지정자
+				execution([접근지정자] 리턴타입 클래스이름.메소드명(파라미터)) : 메소드 실행에 대한 조인 포인트를 지정한다. 
+					접근지정자 : public, private, .. 값을 적어준다. (생략 가능)
+					리턴타입 : 메소드의 반환타입을 의미한다. 
+							("*"은 모든 값을 표현한다. ) 
+					클래스 이름 : 클래스의 풀 패키지명이 포함된 이름을 적어준다. 
+					파라미터의 ".."는 0개 이상을 의미한다. 
+	 -->
+	
+	<aop:config>
+		<aop:aspect ref="characterAspect">
+			<aop:pointcut 
+				id="questPointcut" 
+				expression="execution(* com.kh.aop.character.Character.quest(..))" />
+			
+			<aop:before 
+			 	pointcut-ref="questPointcut"
+				method="beforeQuest"/>
+				
+			<!-- 
+			<aop:after 
+				pointcut="execution(* com.kh.aop.character.Character.quest(..))"
+				method="afterQuest"/>
+			 
+			성공했을 경우 
+			  pointcut="execution(* com.kh.aop.character.Character.quest(..))" 대신에 pointcut-ref="questPointcut" 
+			 <aop:after-returning 
+			 	pointcut-ref="questPointcut"
+			 	method="questSuccess"/>		
+			 
+			 에러 발생했을 경우	
+			 <aop:after-throwing 
+			 	pointcut-ref="questPointcut"
+			 	method="questFail"/>
+			 -->	
+			 
+			 <aop:around 
+			 	pointcut-ref="questPointcut"
+			 	method="aroundQuest"/>
+			 
+		</aop:aspect>
+	</aop:config>
+</beans>
