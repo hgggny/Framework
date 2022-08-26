@@ -9,6 +9,12 @@
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<!-- 
+		AspectJ 어노테이션을 사용한 애스펙트 적용을 위한 프록시 설정
+	 -->
+	 
+	<aop:aspectj-autoproxy />
+	
 	<bean id="character" class="com.kh.aop.character.Character" p:name="현지니어스" p:level="99" p:weapon-ref="sword"/>
 	
 	<bean id="sword" class="com.kh.aop.weapon.Sword" p:name="무한의대검"/>
@@ -28,8 +34,12 @@
 							("*"은 모든 값을 표현한다. ) 
 					클래스 이름 : 클래스의 풀 패키지명이 포함된 이름을 적어준다. 
 					파라미터의 ".."는 0개 이상을 의미한다. 
+					args() : 대상 메소드에 전달되는 파라미터 값을 어드바이스에 전달하기 위한 지정자이다. 
+					bean(빈ID) : 어드바이스를 적용할 빈의 ID를 지정할 수 있다.  
+					@annotation() : 주어진 어노테이션을 갖는 조인 포인트를 정의한다. 
 	 -->
 	
+	<!-- 
 	<aop:config>
 		<aop:aspect ref="characterAspect">
 			<aop:pointcut 
@@ -40,7 +50,6 @@
 			 	pointcut-ref="questPointcut"
 				method="beforeQuest"/>
 				
-			<!-- 
 			<aop:after 
 				pointcut="execution(* com.kh.aop.character.Character.quest(..))"
 				method="afterQuest"/>
@@ -55,7 +64,6 @@
 			 <aop:after-throwing 
 			 	pointcut-ref="questPointcut"
 			 	method="questFail"/>
-			 -->	
 			 
 			 <aop:around 
 			 	pointcut-ref="questPointcut"
@@ -63,4 +71,5 @@
 			 
 		</aop:aspect>
 	</aop:config>
+	 -->	
 </beans>
