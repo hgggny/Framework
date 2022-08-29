@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
+	
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<annotation-driven />
+
+	<!--  
+		<annotation-driven />, <context:component-scan/>를 사용하지 않으면 
+		
+		각 요청을 수행할 Controller들의 클래스를 빈으로 등록하고
+		<beans:bean id="loginController" class="com.kh.spring.member.controller.LoginController"/>
+		<beans:bean id="logoutController" class="com.kh.spring.member.controller.LogoutController"/>
+		
+		HandlerMapping에 각각의 Controller들을 매핑해야 한다.	
+		<beans:bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+			<beans:property name="mappings">
+				<beans:props>
+					<beans:prop key="login.me">loginController</beans:prop>
+					<beans:prop key="logout.me">logoutController</beans:prop>						
+				</beans:props>
+			</beans:property>
+		</beans:bean>
+	-->
+
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
+	<!-- 
+		mapping 속성에 해당하는 요청에 대해 location 속성에 지정 된 디렉토리(폴더)로 매핑시켜주는 설정
+	 -->
+	<resources mapping="/resources/**" location="/resources/" />
+
+	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="prefix" value="/WEB-INF/views/" />
+		<beans:property name="suffix" value=".jsp" />
+	</beans:bean>
+	
+	<context:component-scan base-package="com.kh.mvc" />
+	
+	
+	
+</beans:beans>
