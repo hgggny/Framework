@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- mybatis-config.xml - environment  -->
+	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource"
+			destroy-method="close"
+			p:driverClassName="${db.driver}"
+			p:url="${db.url}"
+			p:username="${db.username}"
+			p:password="${db.password}"
+	/>
+	
+	<!-- mybatis-config.xml - settings -->
+	<bean id="mybatisConfig" class="org.apache.ibatis.session.Configuration"
+			p:jdbcTypeForNull="NULL"
+	/>
+	
+	<!-- 
+		mybatis-config.xml - dataSource / configuration / typeAliases / mapper
+			빈의 속성을 직접 해준다 !
+			p:mapperLocations="classpath:mappers/**/*.xml"
+				** : 몇 단계 아래여도 상관없다.  
+	-->
+			
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
+			p:dataSource-ref="dataSource"
+			p:configuration-ref="mybatisConfig"
+			p:typeAliasesPackage="com.kh.mvc.*.model.vo"
+			p:mapperLocations="classpath:mappers/**/*.xml"
+	/>
+	
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate"
+			c:sqlSessionFactory-ref="sqlSessionFactory"
+	/>
+	
+	<bean id="mapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer" 
+			p:basePackage="com.kh.mvc.*.model.mapper"
+			
+	/>
+</beans>

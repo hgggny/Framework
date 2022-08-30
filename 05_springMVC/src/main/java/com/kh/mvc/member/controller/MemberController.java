@@ -1,8 +1,11 @@
 package com.kh.mvc.member.controller;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.kh.mvc.member.model.service.MemberService;
 import com.kh.mvc.member.model.vo.Member;
 
 import lombok.extern.slf4j.Slf4j;
@@ -109,4 +113,72 @@ public class MemberController {
 //		
 //		return "home";
 //	}
+	
+	
+	@Autowired
+	private MemberService service;
+	
+	/*
+	 * 로그인 처리
+	 * 
+	 * 1. HttpSession과 Model 객체 사용
+	 * 	- Model 객체는 컨트롤러에서 데이터를 뷰로 전달하고자 할 때 사용하는 객체이다. 
+	 * 	- 전달하고자 하는 데이터를 맵 형식(key, value)으로 담을 수 있다. 
+	 * 	- Model 객체의 Scope는 Request Scope 이다. 
+	 * 	
+	 */
+	
+	@PostMapping("/login")
+	public String login(HttpSession session, Model model,
+			@RequestParam String id, @RequestParam String password) {
+		
+		log.info("{} {}", id, password);
+		
+		Member loginMember = service.login(id, password);
+		
+		if(loginMember != null) {
+			session.setAttribute("loginMember", loginMember);
+			
+			// redirect 방식으로 여기서 리턴 한 경로로 브라우저에서 다시 요청하도록 반환한다. 
+			return "redirect:/"; 
+		} else {
+			model.addAttribute("msg", "아이디나 비밀번호가 일치하지 않습니다. ");
+			model.addAttribute("location", "/");
+			
+			// forwarding 방식으로 리턴 한 view 이름이 ViewResolver에 의해 
+			// /WEB-INF/views/common/msg.jsp로 요청을 넘긴다. 
+			return "common/msg";
+		}
+		
+	}
+	
+	/*
+	 * 로그아웃 처리
+	 * 
+	 * 1. HttpSession 객체 사용
+	 */
+	@GetMapping("/logout")
+	public String logout(HttpSession session) {
+		
+		// 세션 삭제
+		session.invalidate();
+		
+		return "redirect:/";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
