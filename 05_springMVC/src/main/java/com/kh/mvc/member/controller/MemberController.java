@@ -1,18 +1,14 @@
 package com.kh.mvc.member.controller;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.support.SessionStatus;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.kh.mvc.member.model.service.MemberService;
 import com.kh.mvc.member.model.vo.Member;
@@ -21,6 +17,9 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Controller
+// Model 객체에 loginMember라는 키 값을 객체가 추가되면 해당 객체를
+// Session Scope 까지 확장하는 어노테이션이다. 
+@SessionAttributes("loginMember")
 public class MemberController {
 
 	// 컨트롤러가 처리할 요청을 정의한다. (URL, Method 등)
@@ -128,49 +127,120 @@ public class MemberController {
 	 * 	
 	 */
 	
+//	@PostMapping("/login")
+//	public String login(HttpSession session, Model model,
+//			@RequestParam String id, @RequestParam String password) {
+//		
+//		log.info("{} {}", id, password);
+//		
+//		Member loginMember = service.login(id, password);
+//		
+//		if(loginMember != null) {
+//			session.setAttribute("loginMember", loginMember);
+//			
+//			// redirect 방식으로 여기서 리턴 한 경로로 브라우저에서 다시 요청하도록 반환한다. 
+//			return "redirect:/"; 
+//		} else {
+//			model.addAttribute("msg", "아이디나 비밀번호가 일치하지 않습니다. ");
+//			model.addAttribute("location", "/");
+//			
+//			// forwarding 방식으로 리턴 한 view 이름이 ViewResolver에 의해 
+//			// /WEB-INF/views/common/msg.jsp로 요청을 넘긴다. 
+//			return "common/msg";
+//		}
+//	}
+	
+	
+	
+	/*
+	 * 2. @SessionAttributes과 ModelAndView 객체 사용
+	 * 		1) @SessionAttributes("키 값")
+	 * 			- Model 객체에서 "키 값"에 해당하는 Attribute를 Session Scope까지 범위를 확장시키는 어노테이션이다. 
+	 * 			- 기존 방법으로 Session을 정리할 수 없고 SessionStatus 객체를 통해서 Session Scope까지 범위가 확장된 데이터를 정리해야 한다. 
+	 * 		2) ModelAndView
+	 * 			- 컨트롤러에서 뷰로 전달할 데이터와 포워딩하려는 뷰에 대한 정보를 담는 객체이다. 
+	 *
+	 */
+	// Http 세션에 넣지 않고 model 객체에 넣고 있다 !
 	@PostMapping("/login")
-	public String login(HttpSession session, Model model,
-			@RequestParam String id, @RequestParam String password) {
+	public ModelAndView login(ModelAndView model,
+				@RequestParam("id") String userId, @RequestParam("password") String userPwd) {
 		
-		log.info("{} {}", id, password);
+		log.info("{}, {}", userId, userPwd);
 		
-		Member loginMember = service.login(id, password);
+		Member loginMember = service.login(userId, userPwd);
 		
 		if(loginMember != null) {
-			session.setAttribute("loginMember", loginMember);
-			
-			// redirect 방식으로 여기서 리턴 한 경로로 브라우저에서 다시 요청하도록 반환한다. 
-			return "redirect:/"; 
+			model.addObject("loginMember", loginMember);
+			model.setViewName("redirect:/");
 		} else {
-			model.addAttribute("msg", "아이디나 비밀번호가 일치하지 않습니다. ");
-			model.addAttribute("location", "/");
+			model.addObject("msg", "아이디나 비밀번호가 일치하지 않습니다.");
+			model.addObject("location", "/");
 			
-			// forwarding 방식으로 리턴 한 view 이름이 ViewResolver에 의해 
-			// /WEB-INF/views/common/msg.jsp로 요청을 넘긴다. 
-			return "common/msg";
+			model.setViewName("common/msg");
 		}
 		
+		return model;
 	}
+	
+	
+	
+	
 	
 	/*
 	 * 로그아웃 처리
 	 * 
 	 * 1. HttpSession 객체 사용
 	 */
+//	@GetMapping("/logout")
+//	public String logout(HttpSession session) {
+//		
+//		// 세션 삭제
+//		session.invalidate();
+//		
+//		return "redirect:/";
+//	}
+	
+	/*
+	 * 2. SessionStatus 객체 사용
+	 */
 	@GetMapping("/logout")
-	public String logout(HttpSession session) {
+	public String logout(SessionStatus status) {
 		
-		// 세션 삭제
-		session.invalidate();
+		status.setComplete(); // 세션 스코프로 확장된 객체들을 지워준다. 
 		
 		return "redirect:/";
 	}
 	
+	@GetMapping("/member/enroll")
+	public String enroll() {
+		
+		log.info("회원 가입 페이지 요청");
+		
+		// WEB-INF/views까지는 prefix 
+		return "member/enroll";
+	}
 	
+	// 객체로 받기 위해 @ModelAttribute 사용
+	@PostMapping("/member/enroll")
+	public ModelAndView enroll(ModelAndView model, @ModelAttribute Member member) {
+		log.info(member.toString());
+		
+		int result = 0;
+		
+		result = service.save(member);
+		
+		if(result > 0) {
+			model.addObject("msg", "회원가입이 정상적으로 완료되었습니다. ");
+			model.addObject("location", "/");
+		} else {
+			model.addObject("msg", "회원가입을 실패하였습니다.  ");
+			model.addObject("location", "/member/enroll");
+		}
 	
-	
-	
-	
+		model.setViewName("common/msg");
+		return model;
+	}
 	
 	
 	

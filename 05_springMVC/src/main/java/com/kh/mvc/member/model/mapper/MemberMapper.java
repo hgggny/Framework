@@ -8,4 +8,6 @@ import com.kh.mvc.member.model.vo.Member;
 @Mapper
 public interface MemberMapper {
 	Member selectMemberById(@Param("id") String id);
+
+	int insertMember(Member member);
 }

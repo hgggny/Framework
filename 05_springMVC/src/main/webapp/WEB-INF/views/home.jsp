@@ -25,6 +25,7 @@
 		
 		<br><br>
 		
+		<input type="button" value="회원가입" onclick="location.href='${ path }/member/enroll'">
 		<input type="submit" value="로그인" />
 	</form>
 </c:if>

@@ -39,6 +39,16 @@
 	
 	<bean id="mapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer" 
 			p:basePackage="com.kh.mvc.*.model.mapper"
-			
 	/>
+	
+	<!-- 
+		트랜잭션 처리 방법
+			1. 트랜잭션 매니저를 빈으로 등록하기 (mybatis-context.xml)
+			2. @Transactional을 사용해서 트랜잭션 처리가 될 수 있도록 
+				<tx:annotation-driven /> 요소를 설정 파일(servlet-context.xml)에 등록한다. 
+	-->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
+		p:dataSource-ref="dataSource"
+	/>
+	
 </beans>
