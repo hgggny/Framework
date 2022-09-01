@@ -59,4 +59,46 @@
 	 -->
 	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
 	
+	<!-- 인터셉터 설정 -->
+	<interceptors>
+		<interceptor>
+			<!-- 인터셉터를 적용시킬 요청 선택 
+			<mapping path="/member/myPage"/>
+			<mapping path="/member/update"/>
+			<mapping path="/member/delete"/>
+			
+			와일드카드 /*, /**의 차이점
+			
+			/member/*
+				- /member/insert (o)
+				- /member/delete/10 (x)
+				
+			/member/**
+				- /member/insert (o)
+				- /member/delete/10 (o)
+			-->
+	
+			<!-- /member/ 모든 요청에 대해 인터셉터 적용 후, 인터셉터를 제외시킬 요청 선택 -->
+			<mapping path="/member/**"/>
+			<exclude-mapping path="/member/enroll"/>
+			<exclude-mapping path="/member/idCheck"/>
+			
+			<!-- 인터셉터 등록 -->
+			<beans:bean id="loginCheckInterceptor" class="com.kh.mvc.common.interceptor.LoginCheckInterceptor"/>
+		</interceptor>
+	</interceptors>
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
 </beans:beans>

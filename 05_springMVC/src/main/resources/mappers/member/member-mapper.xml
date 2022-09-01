@@ -81,7 +81,6 @@
 		UPDATE MEMBER 
 		SET 
 			NAME = #{name},
-			PASSWORD = #{password},
 			PHONE = #{phone},
 			EMAIL = #{email},
 			ADDRESS = #{address},

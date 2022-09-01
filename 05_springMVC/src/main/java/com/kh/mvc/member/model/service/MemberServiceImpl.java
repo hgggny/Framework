@@ -24,11 +24,16 @@ public class MemberServiceImpl implements MemberService {
 	private MemberMapper mapper;
 	
 	@Override
+	public Member findMemberById(String id) {
+		return mapper.selectMemberById(id);
+	}
+
+	@Override
 	public Member login(String id, String password) {
 		Member member = null;
 		
 //		member = dao.findMemberById(session, id);
-		member = mapper.selectMemberById(id);
+		member = this.findMemberById(id);
 
 		// 매번 랜덤한 솔트값을 가지고 암호화를 하기 때문에 매번 다른 값으로 암호화가 된다. 
 		System.out.println("encode() : " + passwordEncoder.encode(password));
@@ -49,6 +54,7 @@ public class MemberServiceImpl implements MemberService {
 		
 		if(member.getNo() != 0) {
 			// update
+			result = mapper.updateMember(member);
 		} else {
 			// insert
 			member.setPassword(passwordEncoder.encode(member.getPassword()));
@@ -59,6 +65,22 @@ public class MemberServiceImpl implements MemberService {
 //		if(true) {
 //		throw new RuntimeException();
 //	}
+		return result;
+	}
+
+	@Override
+	public Boolean isDuplicateID(String id) {
+
+		return this.findMemberById(id) != null;
+	}
+
+	@Override
+	@Transactional
+	public int delete(int no) {
+		int result = 0;
+		
+		result = mapper.deleteMember(no);
+		
 		return result;
 	}
 }

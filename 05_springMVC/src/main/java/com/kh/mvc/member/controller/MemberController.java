@@ -1,11 +1,18 @@
 package com.kh.mvc.member.controller;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.ModelAndView;
@@ -242,11 +249,134 @@ public class MemberController {
 		return model;
 	}
 	
+	/*
+	 * @ResponseBody
+	 * 		- 일반적인 컨트롤러 메소드의 반환형이 String일 경우 뷰의 이름을 반환한다. 
+	 * 		- @ResponseBody 붙은 String 반환은 해당 요청을 보낸 클라이언트에 전달할 데이터를 의미한다. 
+	 * 	
+	 */
+//	@GetMapping("/jsonTest")
+//	@ResponseBody
+//	public String jsonTest() {
+//		
+////		return "{name : 'park', age : 10}"; // json 배열
+//		return "park"; // 문자열
+//	}
 	
+	/*
+	 * jackson 라이브러리
+	 * 		- 자바 객체를 JSON 형태의 데이터로 변환하는 라이브러리이다. 
+	 * 		- 스프링에서 jackson 라이브러리를 추가하고 @ResponseBody를 사용하면 리턴된는 객체를 자동으로 JSON 문자열로 변경해서 응답한다. 
+	 * 
+	 * @RestController
+	 * 		- 해당 어노테이션이 붙은 컨트롤러의 모든 메소드에서 데이터를 반환하는 경우 사용한다. 
+	 * 		- @Controller과 @ResponseBody를 합쳐놓은 역할을 수행한다. 
+	 */
+//	@GetMapping("/jsonTest")
+//	@ResponseBody
+//	public Object jsonTest() {
+//		
+//		return new Member(); // 반환 타입을 Object 로 하고 했을 때, 에러 ! → jackson 라이브버리 추가 후 오류 해결	
+//	}
 	
+	@GetMapping("/jsonTest")
+	@ResponseBody
+	public Object jsonTest() {
+		Map<String, Object> map = new HashMap<>();
+		
+		map.put("test1", null);
+		map.put("test2", "Hi");
+		map.put("test3", 10);
+		map.put("test4", false);
+
+		return map; 
+	}
 	
+	@PostMapping("/member/idCheck")
+//	@ResponseBody을 사용하지 않고 ResponseEntity를 사용하는 방법 (jackson 추가하고 사용하기)
+	public ResponseEntity<Map<String, Boolean>> idCheck(@RequestParam String userId) {
+	      log.info("{}", userId);
+		
+		
+		
+		Map<String, Boolean> map = new HashMap<>();
+		
+		map.put("duplicate", service.isDuplicateID(userId));
+		
+		/*
+		 * ResponseEntity
+		 * 		- 사용자의 요청에 대한 응답(상태 코드, 헤더, Body)을 개발자가 직접 설정하여 반환할 수 있게 해준다.  
+		 * 
+		 * 		- ResponseEntity 반환이면 그 내용을 HTTP 응답에 삽입하는 것이 명확하므로 @ResponseBody 설정 필요가 없고,
+		 * 		  스테이터스 코드도 오브젝트로 설정하므로 @ResponseCode 설정할 필요없다. 
+		 * 
+		 * 		- statusCode : 스테이터스 코드
+		 * 		- headers : HTTP 응답 / 웹서버가 웹브라우저에 응답하는 메세지가 들어있다 / 개별적 헤더를 설정 가능
+		 * 		- body : body에 삽입할 정보를 유지하는 오브젝트 / 데이터 값이 들어있다. 
+		 */
+//		return ResponseEntity.ok()
+//							 .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
+//							 .body(map);
+		return new ResponseEntity<Map<String, Boolean>>(map, HttpStatus.OK);
+	}
 	
+	@GetMapping("/member/myPage")
+	public String myPage() {
+		log.info("회원 정보 수정 페이지 요청");
+		
+		return "member/myPage";	
 	
+	}
+	
+	@PostMapping("/member/update")
+	public ModelAndView update(
+			ModelAndView model,
+			@SessionAttribute("loginMember") Member loginMember,
+			@ModelAttribute Member member) {
+		
+		log.info(member.toString());
+		log.info(loginMember.toString());
+		
+		int result = 0;
+		
+		member.setNo(loginMember.getNo()); // member에 No 값이 없기 때문에 loginMember에서 가져온다. 
+		
+		result = service.save(member);
+		
+		if(result > 0) {
+			// 수정 사항이 DB에는 바로 반영되지만 화면에는 반영이 안돼서 loginMember.getId를 다시 조회하고 add
+			model.addObject("loginMember", service.findMemberById(loginMember.getId()));
+			model.addObject("msg", "회원 정보 수정을 완료했습니다.");
+		} else {
+			model.addObject("msg", "회원 정보 수정을 실패했습니다.");
+		}
+		model.addObject("location", "/member/myPage");
+		model.setViewName("common/msg");
+		
+		return model;
+	}
+
+	@GetMapping("/member/delete")
+	public ModelAndView delete(
+			ModelAndView model,
+			@SessionAttribute("loginMember") Member loginMember) {
+		
+		int result = 0;
+		
+		result = service.delete(loginMember.getNo());
+		
+		if(result > 0) {
+			model.addObject("msg", "정상적으로 탈퇴되었습니다.");
+			model.addObject("location", "/logout");
+		} else {
+			model.addObject("msg", "회원 탈퇴를 실패하였습니다.");
+			model.addObject("location", "/member/myPage");
+		}
+		
+		model.setViewName("common/msg");
+		
+		return model;
+	}
 	
 	
 	
