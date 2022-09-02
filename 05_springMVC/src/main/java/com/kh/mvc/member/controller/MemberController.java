@@ -39,7 +39,9 @@ public class MemberController {
 //		return "home";
 //	}
 	
-	// 요청 시 사용자의 파라미터를 전송받는 방법 
+	/*
+	 *  요청 시 사용자의 파라미터를 전송받는 방법 
+	 
 	// 1. HttpServletRequest 객체를 통해서 전송받기 (기존 Servlet 방식)
 	// 		- 메소드의 매개변수로 HttpServletRequest를 작성하면 메소드 실행 시 스프링 컨테이너가 자동으로 객체를 인자로 주입해준다. 
 //	@PostMapping("/login")
@@ -67,7 +69,6 @@ public class MemberController {
 //		return "home";
 //	}
 	
-	
 	// 2-2) @RequestParam 어노테이션에 default 값 설정
 	// - defaultValue 속성을 사용하면 파라미터 name 속성에 값이 없을 경우 기본값을 지정할 수 있다. 
 //	@PostMapping("/login")
@@ -94,7 +95,6 @@ public class MemberController {
 //		return "home";
 //	}
 	
-	
 	// 3. @PathVariable 어노테이션을 통해서 전송받는 방법
 	// 		- URL 패스상에 있는 특정 값을 가져오기 위해 사용하는 방법이다. 
 	// 		- REST API를 사용할 때, 요청 URL 상에서 필요한 값을 가져오는 경우에 주로 사용한다. 
@@ -119,6 +119,9 @@ public class MemberController {
 //		
 //		return "home";
 //	}
+	 *
+	 *
+	 */
 	
 	
 	@Autowired
@@ -156,8 +159,6 @@ public class MemberController {
 //			return "common/msg";
 //		}
 //	}
-	
-	
 	
 	/*
 	 * 2. @SessionAttributes과 ModelAndView 객체 사용
