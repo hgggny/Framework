@@ -47,4 +47,19 @@ public class BoardServiceImpl implements BoardService {
 		return result;
 	}
 
+	@Override
+	@Transactional
+	public int save(Board board) {
+		int result = 0;
+
+		if(board.getNo() != 0) {
+			// update
+		} else {
+			// insert
+			result = mapper.insertBoard(board);
+		}
+		 
+		return result;
+	}
+
 }

@@ -14,4 +14,6 @@ public interface BoardService {
 	Board findBoardByNo(int no);
 
 	int delete(int no);
+
+	int save(Board board);
 }
