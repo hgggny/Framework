@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.multipart.MultipartFile;
@@ -203,8 +204,81 @@ public class BoardController {
 	      return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
 	   }
 	
-	
-	
-	
-	
+	@GetMapping("/update")
+	public ModelAndView update(
+			ModelAndView model, 
+			@RequestParam int no,
+			@SessionAttribute("loginMember") Member loginMember) {
+		Board board = null;
+		
+		board = service.findBoardByNo(no);
+
+		if(board.getWriterId().equals(loginMember.getId())) {
+			model.addObject("board", board);
+			model.setViewName("board/update");
+		} else {
+			model.addObject("msg", "잘못된 접근입니다.");
+			model.addObject("location", "/board/list");
+			model.setViewName("common/msg");
+		}
+		
+		return model;
+	}
+
+	@RequestMapping(value = "/update", method = { RequestMethod.POST })
+	   public ModelAndView update(
+	         ModelAndView model,
+	         @ModelAttribute Board board,
+	         @RequestParam("upfile") MultipartFile upfile,
+	         @SessionAttribute("loginMember") Member loginMember) {
+	      int result = 0;
+	      String location = null;
+	      String renamedFileName = null;
+	                  
+	      if (service.findBoardByNo(board.getNo()).getWriterId().equals(loginMember.getId())) {
+	         if (upfile != null && !upfile.isEmpty()) {
+	            
+	             try {
+	               
+	               location = resourceLoader.getResource("resources/upload/board").getFile().getPath();
+	               
+	               // 기존에 업로드 된 파일이 있음
+	               if (board.getRenamedFileName() != null) {
+	                  
+	                  // 이전에 업로드 된 첨부 파일이 존재하면 삭제
+	                  MultipartFileUtil.delete(location + "/" + board.getRenamedFileName());
+	               }
+	               
+	               renamedFileName = MultipartFileUtil.save(upfile, location);
+	               
+	               if (renamedFileName != null) {
+	                  board.setOriginalFileName(upfile.getOriginalFilename());
+	                  board.setRenamedFileName(renamedFileName);
+	               }
+	            
+	             } catch (IOException e) {
+	               e.printStackTrace();
+	            }
+	         }
+	         
+	         result = service.save(board);
+	         
+	         if (result > 0) {
+	            
+	            model.addObject("msg", "수정 완");
+	            model.addObject("location", "/board/view?no=" + board.getNo());
+	         } else {
+	            
+	            model.addObject("msg", "다시 수정하쇼");
+	            model.addObject("location", "/board/update?no=" + board.getNo());
+	         }
+	      } else {
+	         model.addObject("msg", "잘못 접근");
+	         model.addObject("location", "/board/list");
+	      }
+	            
+	      model.setViewName("common/msg");
+	      
+	      return model;
+	   }
 }

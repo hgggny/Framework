@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
    <modelVersion>4.0.0</modelVersion>
-   <groupId>com.kh</groupId>
-   <artifactId>mvc</artifactId>
-   <name>05_springMVC</name>
+   <groupId>com.park</groupId>
+   <artifactId>demo</artifactId>
+   <name>99_Demo</name>
    <packaging>war</packaging>
    <version>1.0.0-BUILD-SNAPSHOT</version>
    <properties>
@@ -40,7 +40,7 @@
           <artifactId>spring-jdbc</artifactId>
           <version>${org.springframework-version}</version>
       </dependency>
-                  
+      
       <dependency>
           <groupId>org.springframework</groupId>
           <artifactId>spring-test</artifactId>
@@ -48,24 +48,24 @@
       </dependency>
       
       <!-- Spring Security -->
-	  <dependency>
-		    <groupId>org.springframework.security</groupId>
-		    <artifactId>spring-security-core</artifactId>
-		    <version>${org.springsecurity-version}</version>
-	  </dependency>
-		      
-	  <dependency>
-		    <groupId>org.springframework.security</groupId>
-		    <artifactId>spring-security-web</artifactId>
-		    <version>${org.springsecurity-version}</version>
-	  </dependency>
-	
-	  <dependency>
-	    <groupId>org.springframework.security</groupId>
-	    <artifactId>spring-security-config</artifactId>
-	    <version>${org.springsecurity-version}</version>
-	 </dependency>
-		      
+      <dependency>
+          <groupId>org.springframework.security</groupId>
+          <artifactId>spring-security-core</artifactId>
+          <version>${org.springsecurity-version}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.springframework.security</groupId>
+          <artifactId>spring-security-web</artifactId>
+          <version>${org.springsecurity-version}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.springframework.security</groupId>
+          <artifactId>spring-security-config</artifactId>
+          <version>${org.springsecurity-version}</version>
+      </dependency>
+                  
       <!-- AspectJ -->
       <dependency>
          <groupId>org.aspectj</groupId>
@@ -80,17 +80,17 @@
       </dependency>
       
       <!-- File Upload -->
-	  <dependency>
-	     <groupId>commons-io</groupId>
-	     <artifactId>commons-io</artifactId>
-	     <version>2.11.0</version>
-	  </dependency>
-	      
-	 <dependency>
-	     <groupId>commons-fileupload</groupId>
-	     <artifactId>commons-fileupload</artifactId>
-	     <version>1.4</version>
-	 </dependency>
+      <dependency>
+          <groupId>commons-io</groupId>
+          <artifactId>commons-io</artifactId>
+          <version>2.11.0</version>
+      </dependency>
+      
+      <dependency>
+          <groupId>commons-fileupload</groupId>
+          <artifactId>commons-fileupload</artifactId>
+          <version>1.4</version>
+      </dependency>
       
       <!-- Logging -->
       <dependency>
@@ -184,7 +184,7 @@
           <version>1.2.5</version>
       </dependency>
       
-      <!-- DB 관련 라이브러리 -->
+      <!-- DB -->
       <dependency>
           <groupId>com.oracle.database.jdbc</groupId>
           <artifactId>ojdbc6</artifactId>
@@ -197,14 +197,14 @@
           <version>3.5.10</version>
       </dependency>
       
-      <!-- 스프링에서 mybatis를 사용하기 위한 라이브러리 -->
+      <!-- Mybatis Spring -->
       <dependency>
           <groupId>org.mybatis</groupId>
           <artifactId>mybatis-spring</artifactId>
           <version>2.0.7</version>
       </dependency>
       
-      <!-- 커넥션 풀 기능을 사용하기 위한 라이브러리 -->
+      <!-- DBCP2 -->
       <dependency>
           <groupId>org.apache.commons</groupId>
           <artifactId>commons-dbcp2</artifactId>
@@ -218,12 +218,12 @@
           <version>1.18.24</version>
           <scope>provided</scope> 
       </dependency>
-   
-	<dependency>
-	    <groupId>com.fasterxml.jackson.core</groupId>
-	    <artifactId>jackson-databind</artifactId>
-	    <version>2.13.3</version>
-	</dependency>
+      
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
+          <version>2.13.3</version>
+      </dependency>
    
       <!-- Test -->
       <dependency>
@@ -245,8 +245,7 @@
           <artifactId>assertj-core</artifactId>
           <version>3.23.1</version>
           <scope>test</scope>
-      </dependency>  
-      
+      </dependency>        
    </dependencies>
    
     <build>

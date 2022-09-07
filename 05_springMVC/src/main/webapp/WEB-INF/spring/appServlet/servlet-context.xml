@@ -86,6 +86,7 @@
 			<exclude-mapping path="/member/idCheck"/>
 			<exclude-mapping path="/board/list"/>
 			<exclude-mapping path="/board/view"/>
+			<exclude-mapping path="/board/write"/>
 			
 			<!-- 인터셉터 등록 -->
 			<beans:bean id="loginCheckInterceptor" class="com.kh.mvc.common.interceptor.LoginCheckInterceptor"/>
